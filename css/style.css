@@ -21,12 +21,14 @@
     src: url(/css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
 }
 
-nav{
-    font-family: 'LEMON MILK REGULAR';
+header{
+    padding: 2em 0;
 }
 
-.logo-vibe-nav{
-    width: 90%;
+nav{
+    font-family: 'LEMON MILK REGULAR';
+    padding-right: calc(var(--bs-gutter-x) * 2) !important;
+    padding-left: calc(var(--bs-gutter-x) * 2) !important;
 }
 
 .placeholder-nav span{
@@ -48,4 +50,53 @@ nav ul li a{
 
 nav ul li{
     margin: 0 1.5em;
+}
+
+.placeholder-nav{
+    position: absolute;
+    padding-left: 1em;
+    display: block;
+}
+
+#input-header{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    border: none;
+    border-radius: 2em;
+    background-color: #F0F0F0;
+    height: 2.3em;
+    padding-left: 1em;
+
+}
+
+.input-buscar-container{
+    margin-right: 2em !important;
+}
+
+.input-buscar-container input:valid ~ label,
+.input-buscar-container input:focus ~ label{
+    display: none;
+}
+
+.dropDown-perfil-icon{
+    position: absolute;
+    right: 0;
+    font-family: 'COCOGOOSE DEMIBOLD';
+    right: 3.8em;
+    background-color: white;
+    padding: 1em 0;
+    padding-right: 5em;
+    padding-left: .4em;
+    filter: drop-shadow(-2px 6px 4px rgba(0, 0, 0, 0.25));
+    display: none;
+}
+
+.dropDown-perfil-icon div img{
+    width: 1.5em;
+    margin-right: .4em;
+}
+
+.dropDown-perfil-icon div a{
+    text-decoration: none;
+    color: #737373;
+
 }

@@ -9,27 +9,49 @@
 </head>
 <body>
     <header class="container-fluid">
-        <nav class="container-fluid d-flex justify-content-around align-items-center">
+        <nav class="container-fluid d-flex justify-content-between align-items-center">
             <div class="left-items-nav">
                 <img src="img/LogoVIBE.png" alt="" class="logo-vibe-nav">
             </div>
             <div class="mid-items-nav">
                 <ul class="d-flex align-items-center mb-0">
-                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="index.html">Lançamentos</a></li>
                     <li><a href="#">Produtos</a></li>
                     <li><a href="#">Ofertas</a></li>
                 </ul>
             </div>
-            <div class="rigth-items-nav">
-                <div id="input-buscar-container">
-                    <div class="placeholder-nav">
+            <div class="rigth-items-nav d-flex align-items-center">
+                <div class="input-buscar-container d-flex align-items-center">
+                    <input type="text" id="input-header" required="required">
+                    <label class="placeholder-nav" for="input-header">
                         <img src="img/Search Icon.png" alt="">
                         <span>Buscar</span>
-                    </div>
-                    <input type="text" id="input-header">
+                    </label>
                 </div>
                 <div class="perfil-icon-container">
-                    <img src="img/Perfil Icon.png" alt="">
+                    <img src="img/Perfil Icon.png" alt="" onclick="abrirDropDownHeaderPerfil()">
+                    <div class="dropDown-perfil-icon" id="dropDown-perfil-icon">
+
+                        <div class="line1 d-flex align-items-center mb-3">
+                            <a href="login.html">
+                                <img src="img/Perfil Icon.png" alt="">
+                                <span>Entre ou cadastre-se</span>
+                            </a>
+                        </div>
+                        <div class="line2 d-flex align-items-center mb-3">
+                            <a href="carrinho.html">
+                                <img src="img/Carrinho Icon.png" alt="">
+                                <span>Meu Carrinho</span>
+                            </a>
+                        </div>
+                        <div class="line3 d-flex align-items-center">
+                            <a href="favoritos.html">
+                                <img src="img/Favoritos Icon.png" alt="">
+                                <span>Meus Favoritos</span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </nav>
