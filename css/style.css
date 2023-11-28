@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'LEMON MILK REGULAR';
+    src: url(/css/fonts/LEMONMILK-Regular.otf);
+}
+@font-face {
+    font-family: 'LEMON MILK BOLD';
+    src: url(/css/fonts/LEMONMILK-Bold.otf);
+}
+@font-face {
+    font-family: 'COCOGOOSE ULTRALIGHT';
+    src: url(/css/fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+}
+
+@font-face {
+    font-family: 'COCOGOOSE DEMIBOLD';
+    src: url(/css/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+}
+
+@font-face {
+    font-family: 'COCOGOOSE LIGHT';
+    src: url(/css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
+}
+
+nav{
+    font-family: 'LEMON MILK REGULAR';
+}
+
+.logo-vibe-nav{
+    width: 90%;
+}
+
+.placeholder-nav span{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    color: #c7c7c7c7;
+}
+
+nav ul{
+    padding: 0 !important;
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: .8em;
+}
+
+nav ul li{
+    margin: 0 1.5em;
+}
