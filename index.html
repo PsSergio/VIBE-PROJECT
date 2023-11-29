@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIBE</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <header class="container-fluid">
-        <nav class="container-fluid d-flex justify-content-between align-items-center">
-            <div class="left-items-nav">
-                <img src="img/LogoVIBE.png" alt="" class="logo-vibe-nav">
+    <header class="container-fluid d-flex justify-content-center">
+        <nav class="container-fluid d-flex row">
+            <div class="nav-principal-container container-fluid d-flex justify-content-between align-items-center col mb-4">
+                <div class="left-items-nav">
+                    <img src="img/LogoVIBE.png" alt="" class="logo-vibe-nav">
+                </div>
+                <div class="mid-items-nav">
+                    <ul class="d-flex align-items-center mb-0">
+                        <li><a href="index.html">Lançamentos</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="rigth-items-nav">
+                    <div class="mobile-layout">
+                        <img src="img/carrinho-mobile.png" alt="">
+                        <img src="img/favoritos-mobile.png" alt="">
+                        <div class="menu-bar-container" onclick="abrirDropDown(document.getElementsByClassName('side-menu-container')[0])">
+                            <img src="img/menu bar.png" alt="" class="dropDownBtn" >
+                        </div>
+                    </div>
+                    
+                    <div class="pc-layout align-items-center">
+                        <div class="input-buscar-container d-flex align-items-center">
+                            <input type="text" id="input-header" required="required">
+                            <label class="placeholder-nav" for="input-header">
+                                <img src="img/Search Icon.png" alt="">
+                                <span>Buscar</span>
+                            </label>
+                        </div>
+                        <div class="perfil-icon-container">
+                            <img src="img/Perfil Icon.png" alt="" id="dropDownHeader" class="dropDownBtn" onclick="abrirDropDown(document.getElementsByClassName('dropDown-perfil-icon')[0])">
+                            <div class="dropDown-perfil-icon dropDown" id="dropDown-perfil-icon">
+    
+                                <div class="line1 d-flex align-items-center mb-3">
+                                    <a href="login.html">
+                                        <img src="img/Perfil Icon.png" alt="">
+                                        <span>Entre ou cadastre-se</span>
+                                    </a>
+                                </div>
+                                <div class="line2 d-flex align-items-center mb-3">
+                                    <a href="carrinho.html">
+                                        <img src="img/Carrinho Icon.png" alt="">
+                                        <span>Meu Carrinho</span>
+                                    </a>
+                                </div>
+                                <div class="line3 d-flex align-items-center">
+                                    <a href="favoritos.html">
+                                        <img src="img/Favoritos Icon.png" alt="">
+                                        <span>Meus Favoritos</span>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                </div>
             </div>
-            <div class="mid-items-nav">
-                <ul class="d-flex align-items-center mb-0">
-                    <li><a href="index.html">Lançamentos</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                </ul>
-            </div>
-            <div class="rigth-items-nav d-flex align-items-center">
-                <div class="input-buscar-container d-flex align-items-center">
-                    <input type="text" id="input-header" required="required">
-                    <label class="placeholder-nav" for="input-header">
+            
+            <div class="mobile-input">
+                <div class="input-buscar-container-mobile d-flex align-items-center">
+                    <input type="text" id="input-header-mobile" required="required" class="container-fluid">
+                    <label class="placeholder-nav" for="input-header-mobile">
                         <img src="img/Search Icon.png" alt="">
                         <span>Buscar</span>
                     </label>
                 </div>
-                <div class="perfil-icon-container">
-                    <img src="img/Perfil Icon.png" alt="" onclick="abrirDropDownHeaderPerfil()">
-                    <div class="dropDown-perfil-icon" id="dropDown-perfil-icon">
-
-                        <div class="line1 d-flex align-items-center mb-3">
-                            <a href="login.html">
-                                <img src="img/Perfil Icon.png" alt="">
-                                <span>Entre ou cadastre-se</span>
-                            </a>
-                        </div>
-                        <div class="line2 d-flex align-items-center mb-3">
-                            <a href="carrinho.html">
-                                <img src="img/Carrinho Icon.png" alt="">
-                                <span>Meu Carrinho</span>
-                            </a>
-                        </div>
-                        <div class="line3 d-flex align-items-center">
-                            <a href="favoritos.html">
-                                <img src="img/Favoritos Icon.png" alt="">
-                                <span>Meus Favoritos</span>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </nav>
+        <div class="side-menu-container dropDown">
+            <div class="side-menu">
+                <div class="close-icon-side-bar" onclick="closeDropDown(document.getElementsByClassName('side-menu-container')[0])">
+                    <img src="img/close-icon.png" alt="">
+                </div>
+                <div class="topicos-side-bar">
+                    <ul>
+                        <li><a href="#">Cadastre-se</a></li>
+                        <li><a href="#">Entrar na conta</a></li>
+                        <li><a href="#">Lançamentos</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section>
@@ -63,6 +106,9 @@
 
 
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
