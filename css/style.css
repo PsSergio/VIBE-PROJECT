@@ -15,6 +15,10 @@
     src: url(/css/fonts/LEMONMILK-Bold.otf);
 }
 @font-face {
+    font-family: 'LEMON MILK LIGHT';
+    src: url(/css//fonts/LEMONMILK-Light.otf);
+}
+@font-face {
     font-family: 'COCOGOOSE ULTRALIGHT';
     src: url(css/fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
 }
@@ -31,9 +35,14 @@
 
 /* HEADER / NAVBAR */
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     padding: 2em 0;
     padding-bottom: .5em;
+    z-index: 999;
 }
 
 nav{
@@ -226,3 +235,47 @@ nav ul li{
 }
 
 /* FOOTER */
+
+footer, section{
+    padding-right: calc(var(--bs-gutter-x) * 6) !important;
+    padding-left: calc(var(--bs-gutter-x) * 6) !important;
+}
+
+footer{ 
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p, footer ul{
+    margin: 0 !important;
+    color: white;
+    list-style: none;
+    font-family: 'COCOGOOSE ULTRALIGHT'
+}
+
+.title-list{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1.4em;
+}
+
+.special-char{
+    font-family: 'LEMON MILK LIGHT';
+}
+
+.subtitle-list{
+    margin: 1em 0;
+}
+
+.content-list{
+    margin: 1em 0;
+}
+
+.subtitle-list, .subtitle-content{
+    font-size: .9em;
+}
+
+.desc-content{
+    font-size: .7em;
+}
