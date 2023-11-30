@@ -13,7 +13,8 @@
 <body>
     <header class="container-fluid d-flex justify-content-center">
         <nav class="container-fluid d-flex row">
-            <div class="nav-principal-container container-fluid d-flex justify-content-between align-items-center col mb-4">
+            <div
+                class="nav-principal-container container-fluid d-flex justify-content-between align-items-center col mb-4">
                 <div class="left-items-nav">
                     <img src="img/LogoVIBE.png" alt="" class="logo-vibe-nav">
                 </div>
@@ -28,11 +29,12 @@
                     <div class="mobile-layout">
                         <img src="img/carrinho-mobile.png" alt="">
                         <img src="img/favoritos-mobile.png" alt="">
-                        <div class="menu-bar-container" onclick="abrirDropDown(document.getElementsByClassName('side-menu-container')[0])">
-                            <img src="img/menu bar.png" alt="" class="dropDownBtn" >
+                        <div class="menu-bar-container"
+                            onclick="abrirDropDown(document.getElementsByClassName('side-menu-container')[0])">
+                            <img src="img/menu bar.png" alt="" class="dropDownBtn">
                         </div>
                     </div>
-                    
+
                     <div class="pc-layout align-items-center">
                         <div class="input-buscar-container d-flex align-items-center">
                             <input type="text" id="input-header" required="required">
@@ -42,9 +44,10 @@
                             </label>
                         </div>
                         <div class="perfil-icon-container">
-                            <img src="img/Perfil Icon.png" alt="" id="dropDownHeader" class="dropDownBtn" onclick="abrirDropDown(document.getElementsByClassName('dropDown-perfil-icon')[0])">
+                            <img src="img/Perfil Icon.png" alt="" id="dropDownHeader" class="dropDownBtn"
+                                onclick="abrirDropDown(document.getElementsByClassName('dropDown-perfil-icon')[0])">
                             <div class="dropDown-perfil-icon dropDown" id="dropDown-perfil-icon">
-    
+
                                 <div class="line1 d-flex align-items-center mb-3">
                                     <a href="login.html">
                                         <img src="img/Perfil Icon.png" alt="">
@@ -63,15 +66,15 @@
                                         <span>Meus Favoritos</span>
                                     </a>
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
-    
-                    
+
+
                 </div>
             </div>
-            
+
             <div class="mobile-input">
                 <div class="input-buscar-container-mobile d-flex align-items-center">
                     <input type="text" id="input-header-mobile" required="required" class="container-fluid">
@@ -84,7 +87,8 @@
         </nav>
         <div class="side-menu-container dropDown">
             <div class="side-menu">
-                <div class="close-icon-side-bar" onclick="closeDropDown(document.getElementsByClassName('side-menu-container')[0])">
+                <div class="close-icon-side-bar"
+                    onclick="closeDropDown(document.getElementsByClassName('side-menu-container')[0])">
                     <img src="img/close-icon.png" alt="">
                 </div>
                 <div class="topicos-side-bar">
@@ -103,7 +107,62 @@
     <section>
 
     </section>
-
+    <footer>
+        <div class="coluns-container">
+            <ul class="coluns-list">
+                <li class="title-list">Ajuda</li>
+                <li class="subtitle-list">Dúvidas</li>
+                <li class="content-list">
+                    <p class="subtitle-content">Segunda via da nota fiscal</p>
+                    <p class="desc-content">Entre em contato com o suporte VIBE para solicitar.</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">Vantagens de ser um membro VIBE</p>
+                    <p class="desc-content">Acesso a promoções exclusivas, pontos de recompensa e frete grátis</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">Canais de atendimento</p>
+                    <p class="desc-content">Chat online, email: vibe@gmail.com, telefone: (xx) xxxxx-xxxx</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">Esqueci a minha senha</p>
+                    <p class="desc-content">Clique em ”Esqueci a minha senha?” no login e siga as instruções.</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">Como realizar uma compra no site</p>
+                    <p class="desc-content">Selecione os produtos, adicione ao carrinho, vá para o checkout e siga as etapas.</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">Esqueci meu email de cadastro</p>
+                    <p class="desc-content">Contate o suporte VIBE para recuperar as informações de conta</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">Alterar o carrinho de compras</p>
+                    <p class="desc-content">Vá ao carrinho, ajuste as quantidades ou remova produtos conforme necessário.</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">
+                        Alteração de endereços cadastrados</p>
+                    <p class="desc-content">Acesse a sua conta, vá para as configurações e atualize os dados de endereço.</p>
+                </li>
+                <li class="subtitle-list">Meus pedidos</li>
+                <li class="content-list">
+                    <p class="subtitle-content">Pagamentos</p>
+                    <p class="desc-content">Via Mastercard, Visa, Amex, Elo, Boleto e PIX</p>
+                </li>
+                <li class="content-list">
+                    <p class="subtitle-content">Fale conosco</p>
+                    <p class="desc-content">email: vibe@gmail.com<br>telefone: (xx) xxxxx-xxxx</p>
+                </li>
+            </ul>
+            <ul clas="coluns-list">
+                <li class="title-list">Sobre VIBE</li>
+                <li class="content-lsit"><p class="desc-content">Feita para jogar</p></li>
+                <li class="content-lsit"><p class="desc-content">Sustentabilidade</p></li>
+                <li class="content-lsit"><p class="desc-content">Sobre VIBE</p></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

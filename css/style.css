@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* FONTS */
+
 @font-face {
     font-family: 'LEMON MILK REGULAR';
     src: url(/css/fonts/LEMONMILK-Regular.otf);
@@ -26,6 +28,8 @@
     font-family: 'COCOGOOSE LIGHT';
     src: url(css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
 }
+
+/* HEADER / NAVBAR */
 
 header{
     padding: 2em 0;
@@ -221,3 +225,4 @@ nav ul li{
 
 }
 
+/* FOOTER */
