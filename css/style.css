@@ -192,10 +192,95 @@ nav ul li{
     font-size: 1.3em;
 }
 
-@media (max-width: 4000px){
-    .side-menu-cotainer{
-        display: none;
+/* FOOTER */
+
+footer, section{
+    padding-right: calc(var(--bs-gutter-x) * 5) !important;
+    padding-left: calc(var(--bs-gutter-x) * 5) !important;
+}
+
+footer{ 
+    background-color: black;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
+    padding: 4em 0; 
+    cursor: pointer;
+    user-select: none;
+}
+
+footer p, footer ul{
+    margin: 0 !important;
+    color: white;
+    list-style: none;
+    font-family: 'COCOGOOSE ULTRALIGHT';
+}
+
+.title-list{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1.4em;
+}
+
+.special-char{
+    font-family: 'LEMON MILK LIGHT';
+}
+
+.subtitle-list{
+    margin: 1em 0;
+}
+
+.content-list{
+    margin: 1em 0;
+}
+
+.subtitle-list, .subtitle-content{
+    font-size: .8em;
+}
+
+.subtitle-content:hover{
+    color: #d8d8d8;
+}
+
+.desc-content{
+    font-size: .6em;
+    display: none;
+}
+
+.title-footer-third-col p{
+    font-size: 1.1em;
+    font-family: 'LEMON MILK BOLD';
+}
+
+.imgs-redes-sociais img{
+    width: 2em;
+    margin-right: .5em;
+}
+
+.imgs-formas-pag{
+    width: 72%;
+}
+
+.imgs-formas-pag img{
+    margin-bottom: .4em;
+    width: 4em;
+}
+
+.coluns-container{
+    border-bottom: 1px solid white;
+    padding-bottom: 3em;
+}
+
+@media (max-width: 1480px){
+
+    .imgs-formas-pag{
+        width: 80%;
     }
+
+    footer, section{
+        padding-right: calc(var(--bs-gutter-x) * 3) !important;
+        padding-left: calc(var(--bs-gutter-x) * 3) !important;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -232,50 +317,4 @@ nav ul li{
         display: block;
     }
 
-}
-
-/* FOOTER */
-
-footer, section{
-    padding-right: calc(var(--bs-gutter-x) * 6) !important;
-    padding-left: calc(var(--bs-gutter-x) * 6) !important;
-}
-
-footer{ 
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p, footer ul{
-    margin: 0 !important;
-    color: white;
-    list-style: none;
-    font-family: 'COCOGOOSE ULTRALIGHT'
-}
-
-.title-list{
-    font-family: 'COCOGOOSE DEMIBOLD';
-    font-size: 1.4em;
-}
-
-.special-char{
-    font-family: 'LEMON MILK LIGHT';
-}
-
-.subtitle-list{
-    margin: 1em 0;
-}
-
-.content-list{
-    margin: 1em 0;
-}
-
-.subtitle-list, .subtitle-content{
-    font-size: .9em;
-}
-
-.desc-content{
-    font-size: .7em;
 }
