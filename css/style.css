@@ -333,10 +333,53 @@ footer p, footer ul{
     }
 
     footer, section{
-        padding-right: calc(var(--bs-gutter-x) * .4) !important;
-        padding-left: calc(var(--bs-gutter-x) * .4) !important;
+        padding-right: calc(var(--bs-gutter-x) * -4) !important;
+        padding-left: calc(var(--bs-gutter-x) * -4) !important;
     }
 
+    .title-dropDown-footer img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .plus-icon{
+        font-family: 'LEMON MILK REGULAR';
+        font-size: 2.5em;
+    }
+
+    .title-dropDown{
+        font-family: 'LEMON MILK BOLD';
+        font-size: 1.2em;
+    }
+
+    .title-dropDown-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content-dropDown-footer ul{
+        padding: 0 !important;
+    }
+
+    .content-dropDown-footer{
+        display: none;
+    }
+
+    .container-dropDown-footer{
+        padding-right: calc(var(--bs-gutter-x) * 0) !important	;
+        padding-left: calc(var(--bs-gutter-x) * 0) !important;
+        /* margin-right: calc(var(--bs-gutter-x) * 2) !important; */
+        margin-left: calc(var(--bs-gutter-x) * .5) !important;
+        border-bottom: 1px solid white;
+        
+    }
+
+    .coluns-container{
+        padding-right: calc(var(--bs-gutter-x) * -4) !important;
+        padding-left: calc(var(--bs-gutter-x) * -4) !important;
+    }
+    
 }
 
 
