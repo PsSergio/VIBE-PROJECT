@@ -8,29 +8,29 @@
 
 @font-face {
     font-family: 'LEMON MILK REGULAR';
-    src: url(/css/fonts/LEMONMILK-Regular.otf);
+    src: url(../css/fonts/LEMONMILK-Regular.otf);
 }
 @font-face {
     font-family: 'LEMON MILK BOLD';
-    src: url(/css/fonts/LEMONMILK-Bold.otf);
+    src: url(../css/fonts/LEMONMILK-Bold.otf);
 }
 @font-face {
     font-family: 'LEMON MILK LIGHT';
-    src: url(/css//fonts/LEMONMILK-Light.otf);
+    src: url(../css//fonts/LEMONMILK-Light.otf);
 }
 @font-face {
     font-family: 'COCOGOOSE ULTRALIGHT';
-    src: url(css/fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+    src: url(../css/fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
 }
 
 @font-face {
     font-family: 'COCOGOOSE DEMIBOLD';
-    src: url(css/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+    src: url(../css/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
 }
 
 @font-face {
     font-family: 'COCOGOOSE LIGHT';
-    src: url(css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
+    src: url(../css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
 }
 
 /* HEADER / NAVBAR */
@@ -257,20 +257,30 @@ footer p, footer ul{
 }
 
 .imgs-formas-pag{
-    width: 100%;
+    width: 350px;
     margin-left: .1em !important;
+}
+
+.imgs-formas-pag div{
+    padding: 0 !important; 
+    /* width: 30%; */
+    
 }
 
 .imgs-formas-pag img{
     margin-bottom: .4em;
     margin-right: .4em;
-    width: 4em;
+    width: 5em;
     padding: 0 !important; 
 }
 
 .coluns-container{
     border-bottom: 1px solid white;
     padding-bottom: 3em;
+}
+
+.vibe-logo-footer-container img{
+    width: 80%;
 }
 
 @media (max-width: 1480px){
@@ -328,3 +338,5 @@ footer p, footer ul{
     }
 
 }
+
+
