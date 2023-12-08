@@ -194,7 +194,46 @@ nav ul li{
 
 /* SECTION */
 
+section{
+    margin-bottom: 4em;
+}
 
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    margin-right: 1.3em;
+    /* padding: 0 !important; */
+    margin-bottom: 1.3em;
+}
+
+.product-card p{
+    margin: 0 !important;
+}
+
+.product-card img{
+    width: 244px;
+    height: 244px;
+    object-fit: cover;
+}
+
+.product-card .product-name{
+    width: 244px;
+    font-family: 'COCOGOOSE LIGHT';
+    margin-top: .5em !important;
+}
+
+.product-card .product-subDesc{
+    width: 244px;
+    font-family: 'COCOGOOSE ULTRALIGHT';
+}
+
+.product-card .product-price{
+    width: 244px;
+    font-family: 'LEMON MILK LIGHT';
+}
 
 /* FOOTER */
 
