@@ -192,6 +192,10 @@ nav ul li{
     font-size: 1.3em;
 }
 
+/* SECTION */
+
+
+
 /* FOOTER */
 
 footer, section{
@@ -332,7 +336,7 @@ footer p, footer ul{
         display: block;
     }
 
-    footer, section{
+    footer{
         padding-right: calc(var(--bs-gutter-x) * -4) !important;
         padding-left: calc(var(--bs-gutter-x) * -4) !important;
     }
@@ -380,6 +384,10 @@ footer p, footer ul{
         padding-left: calc(var(--bs-gutter-x) * -4) !important;
     }
     
+    .buscar-input{
+        display: none;
+    }
+
 }
 
 
