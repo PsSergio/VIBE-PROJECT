@@ -35,3 +35,15 @@ for(let i = 0; i < subtitlesFooter.length; i++){
     })
 
 }
+
+function verifyLogin(){
+    let email = document.getElementById("EmailInput").value
+    let senha = document.getElementById("SenhaInput").value
+    if(email === "admin" && senha === "123456" ){
+        location.href = "index.html"
+        alert(`Bem vindo, ${email}`)
+    }
+    else{
+        alert("Usuário ou senha incorretos, tente novamente!")
+    }
+}
