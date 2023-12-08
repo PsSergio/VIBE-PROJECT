@@ -201,6 +201,7 @@ section{
 .products-container{
     display: flex;
     flex-wrap: wrap;
+    width: 57vw;
 }
 
 .product-card{
@@ -233,6 +234,101 @@ section{
 .product-card .product-price{
     width: 244px;
     font-family: 'LEMON MILK LIGHT';
+}
+
+.filter-container-pc-version{
+    width: 25vw;
+}
+
+.title-filter{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1.5em;
+}
+
+.cores-title, .tipos-title{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1em;
+}
+
+.cores-content{
+    flex-wrap: wrap;
+}
+
+.cores-container, .title-container, .tamanho-container{
+    width: 80%;
+}
+
+.filter-content{
+    background-color: #F0F0F0;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.cor-unica-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    margin-left: 0;
+    width: 60px;
+}
+
+.cor-unica-container p{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: .7em;
+}
+
+.cor-ball{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#branco-ball{
+    background-color: white;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+#preto-ball{
+    background-color: black;
+}
+
+#verde-ball{
+    background-color: rgb(11, 167, 11);
+}
+
+#vermelho-ball{
+    background-color: rgb(231, 12, 12);
+}
+
+#ciano-ball{
+    background-color: rgb(19, 221, 228);
+}
+
+#azul-ball{
+    background-color: rgb(8, 30, 226);
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+}
+
+.tipos-container p{
+    margin: 0 !important;
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1em;
+    margin-left: .5em !important;
+}
+
+.tipos-container input{
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-container{
+    margin-bottom: 1em;
 }
 
 /* FOOTER */
