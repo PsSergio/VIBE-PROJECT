@@ -4,8 +4,18 @@ section{
     margin-top: 3em;
 }
 
-.name-product-page{
+.name-product-page, .tamanho-product-page{
     font-family: 'COCOGOOSE DEMIBOLD';
+}
+
+.subDesc-product-page{
+    font-family: 'COCOGOOSE ULTRALIGHT';
+    font-size: .8em;
+}
+
+.price-product-page{
+    font-family: 'LEMON MILK LIGHT';
+    font-size: .8em;
 }
 
 .product-img-page{
@@ -15,6 +25,15 @@ section{
     object-fit: cover;
     z-index: 1;
 
+}
+
+.avaliacao-container p, .avaliacao-container img{
+    margin-right: .4em;
+}
+
+.avaliacao-number{
+    padding: 0 .5em;
+    border: 1px solid rgb(161, 161, 161);
 }
 
 .arrow-left, .arrow-right{
@@ -27,4 +46,52 @@ section{
 
 .arrow-right{
     margin-left: -.3em;
+}
+
+.pacote-card{
+    --widthIMG: 90px;
+    width: var(--widthIMG);
+    height: var(--widthIMG);
+    object-fit: cover;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: .6em;
+    margin-bottom: .6em;
+}
+
+.tamanho-card{
+    margin-right: .6em;
+    margin-bottom: .6em;
+    padding: .1em 1.2em;
+    background-color: #F6F6F6;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.buttons-add-car-and-add-favorite button{
+    height: 50px;
+}
+
+.add-car-btn{
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 40px;
+    width: 75%;
+    margin-right: .5em;
+    font-family: 'COCOGOOSE LIGHT';
+    font-size: .8em;
+}
+
+.add-favorite-btn{
+    background-color: #E2E2E2;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.add-favorite-btn img{
+    width: 30px;
+    height: 25px;
 }
