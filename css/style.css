@@ -43,12 +43,16 @@ header{
     padding: 2em 0;
     padding-bottom: .5em;
     z-index: 999;
+    position: sticky;
+    background-color: white;
+    top: 0;
 }
 
 nav{
     font-family: 'LEMON MILK REGULAR';
     padding-right: calc(var(--bs-gutter-x) * 2) !important;
     padding-left: calc(var(--bs-gutter-x) * 2) !important;
+    background-color: #fff;
 }
 
 .placeholder-nav span{
@@ -169,6 +173,16 @@ nav ul li:hover{
     height: 100vh;
     right: 0;
     position: absolute;
+    animation: side-menu-open-animation 0.5s;
+}
+
+@keyframes side-menu-open-animation{
+    from{
+        right: -20rem;
+    }
+    to{
+        right: 0;
+    }
 }
 
 .close-icon-side-bar img{
@@ -202,8 +216,6 @@ section{
     margin-top: 0.8em;
     margin-bottom: 4em;
 }
-
-/* PÁG BUSCA */
 
 .products-container{
     display: flex;
@@ -341,30 +353,6 @@ section{
 
 .checkbox-container{
     margin-bottom: 1em;
-}
-
-.side-filter-container{
-    position: absolute;
-    background-color: #00000067;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    display: none;
-}
-
-.side-filter{
-    background-color: white;
-    width: 250px;
-    height: 100vh;
-    left: 0;
-    position: absolute;
-}
-
-.close-icon-side-filter img{
-    width: 1em;
-    margin-top: 1em;
-    margin-left: 85%;
 }
 
 /* FOOTER */
@@ -600,8 +588,8 @@ footer p, footer ul{
 }
 
 .carrossel-content{
-    width:60%;
-    height: 60%;
+    width:65%;
+    height: 65%;
     overflow: hidden;
 }
 
@@ -688,6 +676,106 @@ footer p, footer ul{
 } */
 
 
+.products-informations{
+    margin-top: 3vh;
+    font-family:'COCOGOOSE ULTRALIGHT';
+    font-size: 16px;
+    /* width: 80%; */
+    
+}
+
+.text-content{
+    width: 70%;
+}
+
+.btn-see-more{
+    border: none;
+    background-color:#000;
+    color: #fff;
+    min-height: 5vh;
+    min-width: 10vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+    font-family: 'LEMON MILK BOLD';
+    padding: 1vh;
+    margin-bottom: 5vh;
+}
+
+.btn-see-more:hover{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border: 2px solid #000;
+}
+
+/* .produtos-confira{
+    width: 100%;
+    height: 80%;
+    margin-top: 5vh;
+}
+
+.produtos-confira-content{
+    width: 70%;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.img-produtos-confira{
+    background-color: #d8d8d8;
+    width:40%;
+    height: 50%;
+    padding: 3vh;
+}
+
+.texts-products-confira{
+    width: 20vw;
+}
+
+.title-text-products{
+    font-family: 'LEMON MILK BOLD';
+    font-size: 30px;
+}
+
+.inf-text-products{
+    font-family: 'COCOGOOSE ULTRALIGHT';
+    font-size: 18px;
+}
+
+.img-produtos-confira img{
+    width: 100%;
+    height: 20%;
+}
+
+.img-produtos-confira{
+    background-color: #d8d8d8;
+    height: 20%; 
+} */
+
+.bunner2-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:20vh;
+}
+
+.bunner2-content{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+
+.img-bunner2{
+    width: 65%;
+    height: 80%;
+}
+
 @media (max-width: 1480px){
 
     footer, section{
@@ -697,25 +785,21 @@ footer p, footer ul{
 
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1120px){
     .product-card img{
         width: 170px;
         height: 170px;
-        /* object-fit: cover; */
     }
-
-    .product-card .product-name{
+    .product-card .product-price{
         width: 170px;
-        font-size: .8em;
     }
-
     .product-card .product-subDesc{
         width: 170px;
         font-size: .8em;
     }
-
-    .product-card .product-price{
+    .product-card .product-name{
         width: 170px;
+        font-size: .8em;
     }
 }
 
@@ -737,11 +821,9 @@ footer p, footer ul{
         margin: 0;
     }
 
-    .carrossel-content{
-        width: 80%;
-        height: 80%;
+    .img-bunner2{
+        height: 15vh;
     }
-
     
 }
 
@@ -749,6 +831,8 @@ footer p, footer ul{
     .side-menu-container{
         display: none !important;
     }
+
+    
 }
 
 
@@ -768,6 +852,11 @@ footer p, footer ul{
         margin-left: 2vw;
     }
 
+    .btn-see-more{
+        min-width: 15vw;
+        margin-bottom: 3vh;
+    }
+
     #footer-pc-vision{
         display: none !important;
     }   
@@ -775,10 +864,22 @@ footer p, footer ul{
     .inf-input{
         max-height: 5vh;
     }
+    nav, #busca-section{
 
-    nav, #busca-section, .produto-section{
         padding-right: calc(var(--bs-gutter-x) * .0) !important;
         padding-left: calc(var(--bs-gutter-x) * .0) !important;
+    }
+
+    .filter-container-pc-version{
+        display: none;
+    }
+
+    .filtro-icon{
+        margin-left: .6em;
+    }
+
+    .products-container{
+        justify-content: center;
     }
 
     .pc-layout{
@@ -854,17 +955,8 @@ footer p, footer ul{
         display: none;
     }
 
-    .filter-container-pc-version{
-        display: none;
-    }
-
-    .filtro-icon{
-        margin-left: .6em;
-    }
-
-    .products-container{
-        justify-content: center;
-    }
+    
+    
 
 }
 
@@ -873,12 +965,30 @@ footer p, footer ul{
         min-height: 4vh;
         min-width: 12vw;
     }
+
+    .img-bunner2{
+        height: 10vh;
+    }
 }
 
 @media (max-width:675px){
     #back-btn , #continue-btn{
         min-height: 5vh;
         min-width: 18vw;
+    }
+
+    .text-content{
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .btn-see-more{
+        min-width: 20vw;
+        margin-bottom: 2vh;
+    }
+
+    .img-bunner2{
+        height: 10vh;
     }
 }
 
@@ -919,8 +1029,18 @@ footer p, footer ul{
         font-size: 10px;
     }
 
-    body{
-        right: 0;
+    .text-content{
+        width: 90%;
+    }
+
+    .btn-see-more{
+        min-width: 15vw;
+        font-size: 12px;
+        min-height: 5vh;
+    }
+
+    .img-bunner2{
+        height: 8vh;
     }
 
     .product-card img{
@@ -967,5 +1087,20 @@ footer p, footer ul{
     .product-card .product-price{
         width: 120px;
         font-size: .7em;
+    }
+}
+
+@media (max-width:375px){
+    .btn-see-more{
+        min-width: 20vw;
+        font-size: 10px;
+        min-height: 4vh;
+    }
+}
+
+@media (max-width:300px){
+    .text-content{
+        width: 100%;
+        font-size: 8px;
     }
 }
