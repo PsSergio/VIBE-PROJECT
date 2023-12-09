@@ -1,0 +1,35 @@
+.name-product-page{
+    font-family: 'COCOGOOSE DEMIBOLD';
+}
+
+.img-div-product{
+    width: 300px;
+    height: 300px;
+    background-image: url("https://i.im.ge/2023/11/24/Azp8bD.palmeiras-v2-front.png");
+
+    /* background-repeat: no-repeat; */
+  
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-position: center;
+}
+
+.product-img-page{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+.arrow-left, .arrow-right{
+    z-index: 99;
+}
+
+.arrow-left{
+    margin-right: -.3em;
+}
+
+.arrow-right{
+    margin-left: -.3em;
+}

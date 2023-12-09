@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar Produtos VIBE</title>
+    <title>VIBE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleProduto.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body onload="getApiProdutos()">
+<body>
     <header class="container-fluid d-flex justify-content-center">
         <nav class="container-fluid d-flex row">
             <div
@@ -82,7 +84,6 @@
                         <img src="img/Search Icon.png" alt="">
                         <span>Buscar</span>
                     </label>
-                    <img src="img/filtro Icon.png" alt="" class="filtro-icon" onclick="abrirDropDown(document.getElementsByClassName('side-filter-container')[0])">
                 </div>
             </div>
         </nav>
@@ -105,133 +106,23 @@
         </div>
     </header>
 
-    <section class="container-fluid" id="busca-section">
+    <section class="container-fluid produto-section">
 
-        <div class="buscar-input container-fluid mt-4 mb-5">
-            <div class="input-buscar-container-mobile d-flex align-items-center">
-                <input type="text" id="input-header-mobile" required="required" class="container-fluid">
-                <label class="placeholder-nav" for="input-header-mobile">
-                    <img src="img/Search Icon.png" alt="">
-                    <span>Encontre seu produto</span>
-                </label>
+        <div class="product-container-mobile-version d-flex flex-column justify-content-center">
+            <p class="name-product-page">Camiseta VIBE Palmeiras Torcedor Masculina</p>
+            <p class="subDesc-product-page">Time & Futebol</p>
+            <div class="avaliacao-container">
+                <img src="img/Estrelas Icon.png" alt="" class="estrelas">
+                <p class="avaliacao-number">5.0</p>
+                <p class="avaliacao-btn">Ver avaliações</p>
             </div>
-        </div>
-
-        <div class="products-and-filter-container container-fluid d-flex">
-            <div class="products-container">
-                <!-- <div class="product-card ">
-                    <img src="https://i.im.ge/2023/11/24/AzvT1G.saoPaulo-v1-front.png" alt="" class="product-img">
-                    <p class="product-name">Camiseta VIBE São Paulo Torcedor Masculina</p>
-                    <p class="product-subDesc">Casual</p>
-                    <p class="product-price">R$199,99</p>
-                </div> -->
-            </div>
-            <div class="filter-container-pc-version">
-                <div class="filter-content d-flex flex-column align-items-center">
-                    <div class="title-container mb-4 mt-4">
-                        <p class="title-filter">Especifique seu produto!</p>
-                    </div>
-                    <div class="cores-container">
-                        <p class="cores-title">Cores</p>
-                        <div class="cores-content d-flex">
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="branco-ball"></div>
-                                <p class="branco-desc">Branco</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="preto-ball"></div>
-                                <p class="preto-desc">Preto</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="verde-ball"></div>
-                                <p class="verde-desc">Verde</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="vermelho-ball"></div>
-                                <p class="vermelho-desc">Vermelho</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="ciano-ball"></div>
-                                <p class="ciano-desc">Ciano</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="azul-ball"></div>
-                                <p class="azul-desc">Azul</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tamanho-container mb-4">
-                        <p class="tipos-title">Tipos</p>
-                        <div class="tipos-container">
-                            <div class="checkbox-container">
-                                <input type="checkbox">
-                                <p>Tênis</p>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox">
-                                <p>Camisetas</p>
-                            </div>
-                        </div>
-                    </div>
+            <p class="price-product-page"></p>
+            <div class="carrossel-container-product-page d-flex align-items-center justify-content-center">
+                <img src="img/Arrow Icon.png" alt="" class="arrow-left">
+                <div  class="img-div-product">
+                    <!-- <img src="https://i.im.ge/2023/11/24/Azp8bD.palmeiras-v2-front.png" alt="" class="product-img-page" > -->
                 </div>
-            </div>
-        </div>
-
-        <div class="side-filter-container dropDown">
-            <div class="side-filter">
-                <div class="close-icon-side-filter"
-                    onclick="closeDropDown(document.getElementsByClassName('side-filter-container')[0])">
-                    <img src="img/close-icon.png" alt="">
-                </div>
-                <div class="topicos-side-bar">
-                    <div class="filter-container-mobile-vision d-flex flex-column align-items-center">
-                        <div class="title-container mb-4 mt-4">
-                            <p class="title-filter">Especifique seu produto!</p>
-                        </div>
-                        <div class="cores-container">
-                            <p class="cores-title">Cores</p>
-                            <div class="cores-content d-flex">
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="branco-ball"></div>
-                                    <p class="branco-desc">Branco</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="preto-ball"></div>
-                                    <p class="preto-desc">Preto</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="verde-ball"></div>
-                                    <p class="verde-desc">Verde</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="vermelho-ball"></div>
-                                    <p class="vermelho-desc">Vermelho</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="ciano-ball"></div>
-                                    <p class="ciano-desc">Ciano</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="azul-ball"></div>
-                                    <p class="azul-desc">Azul</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tamanho-container mb-4">
-                            <p class="tipos-title">Tipos</p>
-                            <div class="tipos-container">
-                                <div class="checkbox-container">
-                                    <input type="checkbox">
-                                    <p>Tênis</p>
-                                </div>
-                                <div class="checkbox-container">
-                                    <input type="checkbox">
-                                    <p>Camisetas</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="img/Arrow Icon.png" alt="" class="arrow-right" style="transform: rotate(180deg);">
             </div>
         </div>
 

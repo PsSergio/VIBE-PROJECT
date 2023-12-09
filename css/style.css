@@ -776,7 +776,7 @@ footer p, footer ul{
         max-height: 5vh;
     }
 
-    nav, #busca-section{
+    nav, #busca-section, .produto-section{
         padding-right: calc(var(--bs-gutter-x) * .0) !important;
         padding-left: calc(var(--bs-gutter-x) * .0) !important;
     }
