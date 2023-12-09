@@ -203,6 +203,146 @@ section{
     margin-bottom: 4em;
 }
 
+/* PÁG BUSCA */
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: initial; */
+    /* width: 57vw; */
+}
+
+.product-card{
+    margin: 0 .4em;
+    /* padding: 0 !important; */
+    margin-bottom: 1.3em;
+    /* width: 100%; */
+    /* width: auto; */
+}
+
+.product-card p{
+    margin: 0 !important;
+}
+
+.product-card img{
+    width: 244px;
+    height: 244px;
+    object-fit: cover;
+}
+
+.product-card .product-name{
+    width: 244px;
+    font-family: 'COCOGOOSE LIGHT';
+    margin-top: .5em !important;
+}
+
+.product-card .product-subDesc{
+    width: 244px;
+    font-family: 'COCOGOOSE ULTRALIGHT';
+}
+
+.product-card .product-price{
+    width: 244px;
+    font-family: 'LEMON MILK LIGHT';
+}
+
+
+.title-filter{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1.5em;
+}
+
+.cores-title, .tipos-title{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1em;
+}
+
+.cores-content{
+    flex-wrap: wrap;
+}
+
+.cores-container, .title-container, .tamanho-container{
+    width: 80%;
+}
+
+.filter-content{
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    height: 100%;
+    width: 400px;
+    border: 1px solid rgb(218, 218, 218);
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+.cor-unica-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    margin-left: 0;
+    width: 60px;
+}
+
+.cor-unica-container p{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: .7em;
+}
+
+.cor-ball{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#branco-ball{
+    background-color: white;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+#preto-ball{
+    background-color: black;
+}
+
+#verde-ball{
+    background-color: rgb(11, 167, 11);
+}
+
+#vermelho-ball{
+    background-color: rgb(231, 12, 12);
+}
+
+#ciano-ball{
+    background-color: rgb(19, 221, 228);
+}
+
+#azul-ball{
+    background-color: rgb(8, 30, 226);
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+}
+
+.tipos-container p{
+    margin: 0 !important;
+    font-family: 'COCOGOOSE DEMIBOLD';
+    font-size: 1em;
+    margin-left: .5em !important;
+}
+
+.tipos-container input{
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-container{
+    margin-bottom: 1em;
+}
+
 /* FOOTER */
 
 footer, section{
@@ -555,6 +695,26 @@ footer p, footer ul{
         width: 80%;
         height: 80%;
     }
+
+    .product-card img{
+        width: 170px;
+        height: 170px;
+        /* object-fit: cover; */
+    }
+
+    .product-card .product-name{
+        width: 170px;
+        font-size: .8em;
+    }
+
+    .product-card .product-subDesc{
+        width: 170px;
+        font-size: .8em;
+    }
+
+    .product-card .product-price{
+        width: 170px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -588,7 +748,7 @@ footer p, footer ul{
         max-height: 5vh;
     }
 
-    nav{
+    nav, #busca-section{
         padding-right: calc(var(--bs-gutter-x) * .0) !important;
         padding-left: calc(var(--bs-gutter-x) * .0) !important;
     }
@@ -666,6 +826,18 @@ footer p, footer ul{
         display: none;
     }
 
+    .filter-container-pc-version{
+        display: none;
+    }
+
+    .filtro-icon{
+        margin-left: .6em;
+    }
+
+    .products-container{
+        justify-content: center;
+    }
+
 }
 
 @media (max-width:912px){
@@ -722,5 +894,50 @@ footer p, footer ul{
     body{
         right: 0;
     }
+
+    .product-card img{
+        width: 140px;
+        height: 140px;
+        /* object-fit: cover; */
+    }
+
+    .product-card .product-name{
+        width: 140px;
+        font-size: .7em;
+    }
+
+    .product-card .product-subDesc{
+        width: 140px;
+        font-size: .7em;
+
+    }
+
+    .product-card .product-price{
+        width: 140px;
+        font-size: .7em;
+    }
 }
 
+@media (max-width: 392px){
+    .product-card img{
+        width: 120px;
+        height: 120px;
+        /* object-fit: cover; */
+    }
+
+    .product-card .product-name{
+        width: 120px;
+        font-size: .7em;
+    }
+
+    .product-card .product-subDesc{
+        width: 120px;
+        font-size: .7em;
+
+    }
+
+    .product-card .product-price{
+        width: 120px;
+        font-size: .7em;
+    }
+}
