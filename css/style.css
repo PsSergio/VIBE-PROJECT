@@ -43,6 +43,9 @@ header{
     padding: 2em 0;
     padding-bottom: .5em;
     z-index: 999;
+    position: sticky;
+    background-color: white;
+    top: 0;
 }
 
 nav{
@@ -205,12 +208,12 @@ section{
 .products-container{
     display: flex;
     flex-wrap: wrap;
-    width: 57vw;
+    /* width: 80%; */
 }
 
 .product-card{
-    margin-right: 1.3em;
-    /* padding: 0 !important; */
+    margin-right: 1em;
+    padding: 0 !important;
     margin-bottom: 1.3em;
 }
 
@@ -219,29 +222,31 @@ section{
 }
 
 .product-card img{
-    width: 244px;
-    height: 244px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
+    
 }
 
+/* .img-container-busca{
+    width: 320px;
+    height: 320px;
+} */
+
 .product-card .product-name{
-    width: 244px;
+    width: 100%;
     font-family: 'COCOGOOSE LIGHT';
     margin-top: .5em !important;
 }
 
 .product-card .product-subDesc{
-    width: 244px;
+    width: 100%;
     font-family: 'COCOGOOSE ULTRALIGHT';
 }
 
 .product-card .product-price{
-    width: 244px;
+    width: 100%;
     font-family: 'LEMON MILK LIGHT';
-}
-
-.filter-container-pc-version{
-    width: 25vw;
 }
 
 .title-filter{
@@ -263,9 +268,17 @@ section{
 }
 
 .filter-content{
-    background-color: #F0F0F0;
+    background-color: #f1f1f1;
+    border: 1px solid rgb(196, 196, 196);
     flex-wrap: wrap;
     border-radius: 5px;
+    /* position: fixed; */
+    height: 100%;
+    width: 28vw;
+}
+
+.filter-content div{
+    position: sticky;
 }
 
 .cor-unica-container{
@@ -552,6 +565,37 @@ footer p, footer ul{
     text-decoration: underline;
 }
 
+/* @media (max-width: 1859px){
+    .product-card img{
+        height: 300px;
+        width: 300px;
+    }
+} */
+/* 
+@media (max-width: 1588px){
+    .product-card img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .product-card, .product-card p{
+        width: 200px !important;
+    }
+
+    .product-card .product-name{
+        font-size: .8em;
+    }
+    
+    .product-card .product-subDesc{
+        font-size: .8em;
+
+    }
+    
+    .product-card .product-price{
+        font-size: .8em;
+    }
+} */
+
 @media (max-width: 1480px){
 
     footer, section{
@@ -559,7 +603,20 @@ footer p, footer ul{
         padding-left: calc(var(--bs-gutter-x) * 3) !important;
     }
 
+
 }
+
+/* @media (max-width: 1365px) {
+    .product-card img{
+        height: 220px;
+        width: 220px;
+    }
+
+    .product-card, .product-card p{
+        width: 220px !important;
+
+    }
+} */
 
 @media (min-width: 992px) {
     .side-menu-container{
