@@ -3,7 +3,7 @@ const BASEURL_PRODUTOS = "http://localhost:8080/produto/all"
 function organizarElementosProduto(img, name, subDesc, price){
     const PokemonCard = document.createElement("div")
     PokemonCard.classList.add("product-card")
-    PokemonCard.classList.add("col-4")
+    // PokemonCard.classList.add("col-4")
     
     //
     // const imgCardContainer = document.createElement("div")
@@ -13,7 +13,7 @@ function organizarElementosProduto(img, name, subDesc, price){
     const imgCard = document.createElement("img")
     imgCard.src = img
     imgCard.classList.add("product-img")
-    imgCard.classList.add("img-fluid")
+    // imgCard.classList.add("img-fluid")
 
     // imgCardContainer.appendChild(imgCard)
 
