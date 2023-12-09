@@ -202,18 +202,19 @@ nav ul li:hover{
 /* SECTION */
 
 section{
+    margin-top: 0.8em;
     margin-bottom: 4em;
 }
 
 .products-container{
     display: flex;
     flex-wrap: wrap;
-    /* width: 80%; */
+    width: 57vw;
 }
 
 .product-card{
-    margin-right: 1em;
-    padding: 0 !important;
+    margin-right: 1.3em;
+    /* padding: 0 !important; */
     margin-bottom: 1.3em;
 }
 
@@ -222,31 +223,29 @@ section{
 }
 
 .product-card img{
-    width: 320px;
-    height: 320px;
+    width: 244px;
+    height: 244px;
     object-fit: cover;
-    
 }
 
-/* .img-container-busca{
-    width: 320px;
-    height: 320px;
-} */
-
 .product-card .product-name{
-    width: 100%;
+    width: 244px;
     font-family: 'COCOGOOSE LIGHT';
     margin-top: .5em !important;
 }
 
 .product-card .product-subDesc{
-    width: 100%;
+    width: 244px;
     font-family: 'COCOGOOSE ULTRALIGHT';
 }
 
 .product-card .product-price{
-    width: 100%;
+    width: 244px;
     font-family: 'LEMON MILK LIGHT';
+}
+
+.filter-container-pc-version{
+    width: 25vw;
 }
 
 .title-filter{
@@ -268,17 +267,9 @@ section{
 }
 
 .filter-content{
-    background-color: #f1f1f1;
-    border: 1px solid rgb(196, 196, 196);
+    background-color: #F0F0F0;
     flex-wrap: wrap;
     border-radius: 5px;
-    /* position: fixed; */
-    height: 100%;
-    width: 28vw;
-}
-
-.filter-content div{
-    position: sticky;
 }
 
 .cor-unica-container{
@@ -469,7 +460,7 @@ footer p, footer ul{
 .login-information{
     margin-bottom: 2vh;
     font-size: 20px;
-    font-family: 'LEMON MILK BOLD';
+    /* font-family: 'LEMON MILK BOLD'; */
 }
 
 .inputs{
@@ -509,6 +500,7 @@ footer p, footer ul{
     align-items: center;
     margin-bottom: 0.5vh;
     margin-left: 0.5vw;
+    margin-top: 0.5vh;
 }
 
 .btn-display-flex-row{
@@ -565,37 +557,6 @@ footer p, footer ul{
     text-decoration: underline;
 }
 
-/* @media (max-width: 1859px){
-    .product-card img{
-        height: 300px;
-        width: 300px;
-    }
-} */
-/* 
-@media (max-width: 1588px){
-    .product-card img{
-        height: 200px;
-        width: 200px;
-    }
-
-    .product-card, .product-card p{
-        width: 200px !important;
-    }
-
-    .product-card .product-name{
-        font-size: .8em;
-    }
-    
-    .product-card .product-subDesc{
-        font-size: .8em;
-
-    }
-    
-    .product-card .product-price{
-        font-size: .8em;
-    }
-} */
-
 @media (max-width: 1480px){
 
     footer, section{
@@ -603,20 +564,7 @@ footer p, footer ul{
         padding-left: calc(var(--bs-gutter-x) * 3) !important;
     }
 
-
 }
-
-/* @media (max-width: 1365px) {
-    .product-card img{
-        height: 220px;
-        width: 220px;
-    }
-
-    .product-card, .product-card p{
-        width: 220px !important;
-
-    }
-} */
 
 @media (min-width: 992px) {
     .side-menu-container{
@@ -628,9 +576,32 @@ footer p, footer ul{
 
 @media (max-width: 992px) {
 
+    .logo{
+        width:15vw;
+    }
+
+    #back-btn , #continue-btn{
+        min-height: 5vh;
+        width: 15vw;
+    }
+
+    #continue-btn{
+        margin-left: 2vw;
+    }
+
+
+    .st img{
+        width: 80%;
+        max-height: 80%;
+    }
+
     #footer-pc-vision{
         display: none !important;
     }   
+
+    .inf-input{
+        max-height: 5vh;
+    }
 
     nav{
         padding-right: calc(var(--bs-gutter-x) * .0) !important;
@@ -712,7 +683,43 @@ footer p, footer ul{
 
 }
 
+@media (max-width:912px){
+    #back-btn , #continue-btn{
+        min-height: 4vh;
+        min-width: 12vw;
+    }
+}
+
+/* @media (max-width:775px){
+    .carrossel-content{
+        width: 600px;
+        max-height: 400px;
+    }
+} */
+
+@media (max-width:675px){
+    #back-btn , #continue-btn{
+        min-height: 5vh;
+        min-width: 18vw;
+    }
+
+    /* .carrossel-content{
+        width: 500px;
+        max-height: 300px;
+    } */
+
+    .st img{
+        width: 80%;
+        max-height: 50%;
+    }
+}
+
 @media (max-width:475px){
+
+    .carrossel-content{
+        width: 80%;
+        min-height: 40%;
+    }
 
     .logo{
         min-width: 18vw;
@@ -725,7 +732,7 @@ footer p, footer ul{
 
     #back-btn , #continue-btn{
         min-height: 5vh;
-        width: 15vh;
+        min-width: 13vh;
     }
 
     #continue-btn{
@@ -748,10 +755,19 @@ footer p, footer ul{
     .register{
         font-size: 10px;
     }
-}
 
-@media (max-width:280px){
     body{
         right: 0;
+    }
+
+    .st img{
+        width: 110%;
+        max-height: 40%;
+    }
+}
+
+@media (max-width:290px){
+    .st img{
+        max-height: 20%;
     }
 }

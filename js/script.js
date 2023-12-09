@@ -47,3 +47,12 @@ function verifyLogin(){
         alert("Usuário ou senha incorretos, tente novamente!")
     }
 }
+
+let cont = 1
+setInterval(function(){
+    document.getElementById('radio' +cont).checked=true
+    cont++
+    if(cont>2){
+        cont = 1
+    }
+},7000)
