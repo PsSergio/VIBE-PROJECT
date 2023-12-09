@@ -176,6 +176,34 @@ nav ul li:hover{
     animation: side-menu-open-animation 0.5s;
 }
 
+.side-filter-container{
+    position: absolute;
+    background-color: #00000067;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 999;
+
+}
+
+.side-filter{
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    animation: side-menu-open-animation1 0.5s;
+
+}
+
+.close-icon-side-filter img{
+    width: 1em;
+    margin-top: 1em;
+    margin-left: 85%;
+}
+
 @keyframes side-menu-open-animation{
     from{
         right: -20rem;
@@ -184,6 +212,16 @@ nav ul li:hover{
         right: 0;
     }
 }
+
+@keyframes side-menu-open-animation1{
+    from{
+        left: -20rem;
+    }
+    to{
+        left: 0;
+    }
+}
+
 
 .close-icon-side-bar img{
     width: 1em;
