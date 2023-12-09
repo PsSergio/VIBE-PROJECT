@@ -36,6 +36,10 @@ for(let i = 0; i < subtitlesFooter.length; i++){
 
 }
 
+function backToPrincipalPage(){
+    location.href = "index.html"
+}
+
 function verifyLogin(){
     let email = document.getElementById("EmailInput").value
     let senha = document.getElementById("SenhaInput").value
