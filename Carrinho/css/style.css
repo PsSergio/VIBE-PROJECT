@@ -1,0 +1,1039 @@
+@font-face {
+    font-family: 'LEMON MILK REGULAR';
+    src: url(../css/fonts/LEMONMILK-Regular.otf);
+}
+@font-face {
+    font-family: 'LEMON MILK BOLD';
+    src: url(../css/fonts/LEMONMILK-Bold.otf);
+}
+@font-face {
+    font-family: 'COCOGOOSE ULTRALIGHT';
+    src: url(../css/fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+}
+
+@font-face {
+    font-family: 'COCOGOOSE DEMIBOLD';
+    src: url(../css/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+}
+
+@font-face {
+    font-family: 'COCOGOOSE LIGHT';
+    src: url(../css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
+}
+
+#CartFooter{
+  display: flex;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#VIBE{
+    margin-bottom: 100px;
+    margin-left: 18%;
+    margin-top: 30px;
+    margin-right: -1%;
+}
+
+#FButton{
+    margin-left: 50%;
+    font-family: 'COCOGOOSE LIGHT';
+    border-color: gray;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#MC{
+  font-family: 'LEMON MILK BOLD';
+  margin-left: 18%;
+  padding-bottom: 80px;
+}
+
+.Titulo {
+    padding-left: 0px;
+    padding-right: 315px;
+  }
+
+  .Titulo:last-child{
+    padding-right: 0px;
+  }
+
+.TableIMG{
+    width: 160px;
+    height: auto;
+}
+
+.ProdutoInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ProdutoInfo img {
+    margin-right: 10px; 
+  }
+  
+  .TextoInfo div {
+    margin: 0; 
+    font-size: 11px;
+    font-family: 'LEMON MILK REGULAR';
+  }
+
+  .Total,
+  .Subtotal{
+    font-family: 'LEMON MILK REGULAR';
+  }
+  
+  .TableContainer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; 
+
+  }
+
+  .Quantity button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  .Quantity span.num {
+    min-width: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .Quantity2 button {
+    padding: 5px 10px;
+    margin: 0 7px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  .Quantity2 span.num {
+    min-width: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  #CarLinha{
+    background-color: gray;
+    height: 1px;
+    margin-top: 30px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  #BuyInfo{
+    display: flex;
+  }
+
+  #QNTDC{
+    padding-left: 15%;
+    font-family: 'LEMON MILK REGULAR';
+  }
+
+  #SBC{
+    padding-left: 20%;
+    font-family: 'LEMON MILK REGULAR';
+  }
+ 
+  #ResumoTXT {
+    padding-left: 45%;
+}
+
+.ResLine {
+    background-color: gray;
+    margin-left: 45%;;
+    width: 400px;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ResumoINFO:not(:last-child) {
+    padding-right: 200px;
+    padding-left: 350px;
+    font-family: 'LEMON MILK REGULAR';
+}
+
+.ResumoINFOG {
+    color: green;
+    font-family: 'LEMON MILK REGULAR';
+}
+
+#ResumoBuy {
+    background-color: black;
+    border-radius: 50px;
+    padding: 15px;
+    color: white;
+    font-family: 'LEMON MILK REGULAR';
+    width: 250px;
+    margin-left: 350px;
+}
+
+#DescontoIn {
+    width: 320px;
+    border-radius: 5px;
+}
+
+.resumo-container {
+  display: flex;
+}
+
+.resumo {
+  margin-left: 10px;
+}
+
+.desconto {
+  margin-left: 10%; 
+  margin-top: 20px;
+  font-family: 'COCOGOOSE DEMIBOLD';
+}
+
+#ResumoDes {
+  margin-bottom: 10px; 
+}
+
+#DescontoIn {
+  width: 320px;
+  border-radius: 5px;
+}
+
+#ApplyRes {
+  margin-top: 10px; 
+  background-color: black;
+  border-radius: 50px;
+  margin-left: 0px;
+  color: white;
+  font-family: 'LEMON MILK REGULAR';
+  width: 250px;
+  font-size: 14px;
+  height: 40px;;
+}
+
+#CartCar{
+  margin-left: 10%;
+  margin-top: 90px;
+  font-family: 'LEMON MILK REGULAR';
+}
+
+
+  
+    .wrapper{
+        display: flex;
+        max-width: 1000px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      .wrapper i{
+        top: 50%;
+        height: 44px;
+        width: 44px;
+        color: #343F4F;
+        cursor: pointer;
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+      }
+      .wrapper i:active{
+        transform: translateY(-50%) scale(0.9);
+      }
+      .wrapper i:hover{
+        background: #f2f2f2;
+      }
+      .wrapper i:first-child{
+        left: -22px;
+        display: none;
+      }
+      .wrapper i:last-child{
+        right: -22px;
+      }
+      .wrapper .carousel{
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+      }
+
+      .wrapper .carousel div {
+        width: 100%; 
+        height: auto;
+        margin-left: 0; 
+        margin-right: 20px;
+    }
+
+      .carousel.dragging{
+        cursor: grab;
+        scroll-behavior: auto;
+      }
+      .carousel.dragging img{
+        pointer-events: none;
+      }
+      .carousel img{
+        height: 340px;
+        object-fit: cover;
+        user-select: none;
+        margin-left: 14px;
+        width: calc(100% / 3);
+      }
+      .carousel img:first-child{
+        margin-left: 0px;
+      }  
+
+      .fotos {
+        height: 100%;
+        width: 100%;
+         
+    }
+    
+      .wrapper{
+        display: flex;
+        max-width: 1200px;
+        position: relative;
+      }
+      .wrapper i{
+        top: 50%;
+        height: 44px;
+        width: 44px;
+        color: #343F4F;
+        cursor: pointer;
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+      }
+      .wrapper i:active{
+        transform: translateY(-50%) scale(0.9);
+      }
+      .wrapper i:hover{
+        background: #f2f2f2;
+      }
+      .wrapper i:first-child{
+        left: -22px;
+        display: none;
+      }
+      .wrapper i:last-child{
+        right: -22px;
+      }
+      .wrapper .carousel{
+        font-size: 2em;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        width: 100%; 
+        height: auto;
+        margin-left: 0;
+      }
+      .carousel{
+        display: flex;
+      }
+      
+      .carousel div{
+        margin-right: .5em;
+      }
+      
+      .carousel div.dragging{
+        cursor: grab;
+        scroll-behavior: auto;
+      }
+      .carousel div.dragging img{
+        pointer-events: none;
+      }
+      .carousel div img{
+        height: 340px;
+        object-fit: cover;
+        user-select: none;
+        margin-left: 14px;
+        width: 340px;
+      }
+      .carousel div img:first-child{
+        margin-left: 0px;
+      }
+
+    .DsCarousel{
+        font-size: 18px;
+    }
+
+    footer, section{
+        padding-right: calc(var(--bs-gutter-x) * 5) !important;
+        padding-left: calc(var(--bs-gutter-x) * 5) !important;
+    }
+    
+    footer{ 
+        background-color: black;
+        /* position: absolute;
+        bottom: 0;
+        width: 100%; */
+        padding: 4em 0; 
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    footer p, footer ul{
+        margin: 0 !important;
+        color: white;
+        list-style: none;
+        font-family: 'COCOGOOSE ULTRALIGHT';
+    }
+    
+    .title-list{
+        font-family: 'COCOGOOSE DEMIBOLD';
+        font-size: 1.4em;
+    }
+    
+    .special-char{
+        font-family: 'LEMON MILK LIGHT';
+    }
+    
+    .subtitle-list{
+        margin: 1em 0;
+    }
+    
+    .content-list{
+        margin: 1em 0;
+    }
+    
+    .subtitle-list, .subtitle-content{
+        font-size: .8em;
+    }
+    
+    .subtitle-content:hover{
+        color: #d8d8d8;
+    }
+    
+    .desc-content{
+        font-size: .6em;
+        display: none;
+    }
+    
+    .title-footer-third-col p{
+        font-size: 1.1em;
+        font-family: 'LEMON MILK BOLD';
+    }
+    
+    .imgs-redes-sociais img{
+        width: 2em;
+        margin-right: .5em;
+    }
+    
+    .imgs-formas-pag{
+        width: 350px;
+        margin-left: .1em !important;
+    }
+    
+    .imgs-formas-pag div{
+        padding: 0 !important; 
+        /* width: 30%; */
+        
+    }
+    
+    .imgs-formas-pag img{
+        margin-bottom: .4em;
+        margin-right: .4em;
+        width: 5em;
+        padding: 0 !important; 
+    }
+    
+    .coluns-container{
+        border-bottom: 1px solid white;
+        padding-bottom: 3em;
+    }
+    
+    .vibe-logo-footer-container img{
+        width: 80%;
+    }
+
+    @media (max-width: 4000px){
+      .side-menu-container{
+          display: none;
+      }
+  }
+
+  @media (max-width: 1480px){
+    
+    footer, section{
+        padding-right: calc(var(--bs-gutter-x) * 3) !important;
+        padding-left: calc(var(--bs-gutter-x) * 3) !important;
+    }
+
+}
+
+  @media (max-width: 1400px) {
+      
+      .fotos {
+          height: 250px;
+          width: 350px;
+          margin-left: -40px;
+          margin: 0 10px; 
+      }
+
+      #MC{
+        font-family: 'LEMON MILK BOLD';
+        margin-left: 15%;
+        padding-bottom: 80px;
+      }
+      
+      .Titulo {
+          padding-left: 0px;
+          padding-right: 220px;
+        }
+      
+    }
+
+
+    @media (max-width: 1200px) {
+      
+      .fotos {
+          height: 200px;
+          width: 300px;
+          margin-left: -30px;
+          margin: 0 10px; 
+      }  
+
+      .carousel img{
+          width: calc(100% / 2);
+        }
+
+        #CarLinha{
+          width: 80%;
+        }
+
+        .resumo-container {
+          display: grid;
+        }
+
+        .desconto{
+          margin-left: 30%;
+        }
+
+        .ResLine {
+          background-color: gray;
+          margin-left: 30%;;
+          width: 600px;
+          height: 1px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+
+      #ResumoTXT{
+        margin-left: -150px;
+      }
+      
+      .ResumoINFO:not(:last-child) {
+          padding-right: 200px;
+          padding-left: 375px;
+          font-family: 'LEMON MILK REGULAR';
+      }
+  }
+    
+    @media (min-width: 992px) {
+        .side-menu-container{
+            display: none !important;
+        }
+    }
+    
+    
+    
+    @media (max-width: 992px) {
+    
+        #footer-pc-vision{
+            display: none !important;
+        }   
+    
+        nav{
+            padding-right: calc(var(--bs-gutter-x) * .0) !important;
+            padding-left: calc(var(--bs-gutter-x) * .0) !important;
+        }
+    
+        .pc-layout{
+            display: none !important;
+        }
+    
+        .mid-items-nav{
+            display: none;
+        }
+    
+        .mobile-layout{
+            display: flex !important; 
+            align-items: center !important;
+        }
+    
+        .logo-vibe-nav{
+            width: 5em;
+        }
+    
+        .mobile-input{
+            display: block;
+        }
+    
+        footer, section{
+            padding-right: calc(var(--bs-gutter-x) * -4) !important;
+            padding-left: calc(var(--bs-gutter-x) * -4) !important;
+        }
+    
+        .title-dropDown-footer img{
+            width: 30px;
+            height: 30px;
+        }
+    
+        .plus-icon{
+            font-family: 'LEMON MILK REGULAR';
+            font-size: 2.5em;
+        }
+    
+        .title-dropDown{
+            font-family: 'LEMON MILK BOLD';
+            font-size: 1.2em;
+        }
+    
+        .title-dropDown-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .content-dropDown-footer ul{
+            padding: 0 !important;
+        }
+    
+        .content-dropDown-footer{
+            display: none;
+        }
+    
+        .container-dropDown-footer{
+            padding-right: calc(var(--bs-gutter-x) * 0) !important	;
+            padding-left: calc(var(--bs-gutter-x) * 0) !important;
+            /* margin-right: calc(var(--bs-gutter-x) * 2) !important; */
+            margin-left: calc(var(--bs-gutter-x) * .5) !important;
+            border-bottom: 1px solid white;
+            
+        }
+    
+        .coluns-container{
+            padding-right: calc(var(--bs-gutter-x) * -4) !important;
+            padding-left: calc(var(--bs-gutter-x) * -4) !important;
+        }
+
+        .TextoInfo div {
+          margin: 0; 
+          font-size: 7px;
+          font-family: 'LEMON MILK REGULAR';
+        }
+        
+    }
+
+@media (min-width: 992px) {
+    .side-menu-container{
+        display: none !important;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    nav{
+        padding-right: calc(var(--bs-gutter-x) * .0) !important;
+        padding-left: calc(var(--bs-gutter-x) * .0) !important;
+    }
+
+    .pc-layout{
+        display: none !important;
+    }
+
+    .mid-items-nav{
+        display: none;
+    }
+
+    .mobile-layout{
+        display: flex !important; 
+        align-items: center !important;
+    }
+
+    .logo-vibe-nav{
+        width: 5em;
+    }
+
+    .mobile-input{
+        display: block;
+    }
+
+    .fotos {
+        height: 100%;
+        width: 100%;
+        margin-left: -40px;
+        margin: 0 10px; 
+    }
+
+    #MC{
+      font-family: 'LEMON MILK BOLD';
+      margin-left: 12%;
+      padding-bottom: 80px;
+    }
+    
+    .Titulo {
+        padding-left: 0px;
+        padding-right: 150px;
+      }
+
+      
+    
+
+      .carousel-inner .carousel-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .wrapper{
+        display: flex;
+        max-width: 900px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .carousel div img {
+        width: 350px; 
+        height: 350px;
+        
+    }
+
+    .ResLine {
+      background-color: gray;
+      margin-left: 30%;;
+      width: 400px;
+      height: 1px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .ResumoINFO:not(:last-child) {
+      padding-right: 200px;
+      padding-left: 275px;
+      font-family: 'LEMON MILK REGULAR';
+  }
+
+      
+      
+  }
+
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .wrapper{
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+    .carousel img{
+        width: 300rem;
+      }
+
+      #VIBE{
+        margin-bottom: 100px;
+        margin-left: 18%;
+        margin-top: 30px;
+        margin-right: -1%;
+    }
+    
+    #FButton{
+        margin-left: 30%;
+        font-family: 'COCOGOOSE LIGHT';
+        border-color: gray;
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
+    #MC{
+      font-family: 'LEMON MILK BOLD';
+      margin-left: 12%;
+      padding-bottom: 80px;
+    }
+    
+    .Titulo {
+        padding-left: 0px;
+        padding-right: 130px;
+        display: none
+      }
+
+      .TableBlock :nth-child(4) {
+        display: none;
+      }
+
+      .ResLine {
+        background-color: gray;
+        margin-left: 5%;;
+        width: 400px;
+        height: 1px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #ResumoTXT{
+      margin-left: -250px;
+    }
+
+    #ResumoBuy{
+      margin-left: 20px;
+    }
+    
+    .ResumoINFO:not(:last-child) {
+        padding-right: 200px;
+        padding-left: 30px;
+        font-family: 'LEMON MILK REGULAR';
+    }
+
+      
+      
+}
+
+@media (max-width: 550px){
+
+    .carousel img{
+        width: 100%;
+    }
+
+    .carousel div img {
+        width: 250px; 
+        height: 250px;;
+    }
+
+    #MC{
+      font-family: 'LEMON MILK BOLD';
+      margin-left: 12%;
+      padding-bottom: 80px;
+    }
+    
+    .Titulo {
+        padding-left: 0px;
+        padding-right: 120px;
+    }
+
+    .Subtotal{
+      font-size: 12px;
+    }
+
+    .ProdutoInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .TextoInfo {
+      margin-top: 10px; 
+      text-align: left;
+    }
+  
+    .Quantity,
+    .Quantity2 {
+      margin-top: 10px;
+    }
+
+    .ResLine {
+      background-color: gray;
+      margin-left: 5%;;
+      width: 400px;
+      height: 1px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  #ResumoTXT{
+    margin-left: -225px;
+  }
+
+  #ResumoBuy{
+    margin-left: 20px;
+  }
+  
+  .ResumoINFO:not(:last-child) {
+      padding-right: 200px;
+      padding-left: 30px;
+      font-family: 'LEMON MILK REGULAR';
+  }
+
+  #ResumoDes,
+  #DescontoIn,
+  #ApplyRes{
+    margin-left: -120px;
+  }
+
+
+
+}
+
+@media (max-width: 510px){
+
+    .carousel img{
+        width: 100%;
+      }
+
+      .ResLine {
+        background-color: gray;
+        margin-left: 5%;;
+        width: 340px;
+        height: 1px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  
+    #ResumoTXT{
+      margin-left: -40px;
+    }
+  
+    #ResumoBuy{
+      margin-left: 20px;
+    }
+    
+    .ResumoINFO:not(:last-child) {
+        padding-right: 100px;
+        padding-left: 30px;
+        font-family: 'LEMON MILK REGULAR';
+    }
+  
+    #ResumoDes,
+    #DescontoIn,
+    #ApplyRes{
+      margin-left: -120px;
+    }
+
+    
+}
+
+@media (max-width: 430px){
+
+    .carousel img{
+        width: 260px;
+        height: 200px;
+        margin-left: 20px;
+      }
+
+      .fotos {
+        height: 110%;
+        width: 110%;
+        margin-left: -40px;
+        margin: 0 -20px; 
+    }
+
+    #CartFooter{
+      display: grid;
+    }
+
+    #FButton{
+      margin-top: -40px;
+      margin-left: 85px;
+      margin-bottom: 50px;
+    }
+
+    #VIBE{
+      margin-bottom: 50px;
+    }
+
+    #MC{
+      font-family: 'LEMON MILK BOLD';
+      margin-left: 12%;
+      padding-bottom: 80px;
+    }
+
+    #QNTDC{
+      padding-left: 12%;
+      font-family: 'LEMON MILK REGULAR';
+      font-size: 12px;
+    }
+  
+    #SBC{
+      padding-left: 15%;
+      font-family: 'LEMON MILK REGULAR';
+      font-size: 12px;
+    }
+
+    .ResLine {
+      background-color: gray;
+      margin-left: 5%;;
+      width: 260px;
+      height: 1px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  #ResumoTXT{
+    margin-left: -40px;
+  }
+
+  #ResumoBuy{
+    margin-left: 20px;
+  }
+  
+  .ResumoINFO:not(:last-child) {
+      padding-right: 100px;
+      padding-left: 30px;
+      font-family: 'LEMON MILK REGULAR';
+      font-size: 12px;
+  }
+
+  .ResumoINFOG{
+    font-size: 12px;
+  }
+
+  #ResumoDes,
+  #DescontoIn,
+  #ApplyRes{
+    margin-left: -60px;
+  }
+
+  #DescontoIn{
+    width: 180px;
+  }
+
+  #ResumoDes{
+    font-size: 22px;
+  }
+
+  #ApplyRes{
+    width: 120px;
+  }
+
+  #ResumoBuy{
+    width: 40%;
+    height: auto;
+  }
+    
+    
+    
+}
+   
+@media (max-width: 280px){
+
+    .carousel div img {
+        width: 200px; 
+        height: 200px;
+        
+    }
+}

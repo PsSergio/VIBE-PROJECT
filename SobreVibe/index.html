@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container-fluid d-flex justify-content-center">
+        <nav class="container-fluid d-flex row">
+            <div
+                class="nav-principal-container container-fluid d-flex justify-content-between align-items-center col mb-4">
+                <div class="left-items-nav">
+                    <img src="img/LogoVIBE.png" alt="" class="logo-vibe-nav">
+                </div>
+                <div class="mid-items-nav">
+                    <ul class="d-flex align-items-center mb-0">
+                        <li><a href="../index.html">Lançamentos</a></li>
+                        <li><a href="../busca.html">Produtos</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="rigth-items-nav">
+                    <div class="mobile-layout">
+                        <img src="img/carrinho-mobile.png" alt="">
+                        <img src="img/favoritos-mobile.png" alt="">
+                        <div class="menu-bar-container"
+                            onclick="abrirDropDown(document.getElementsByClassName('side-menu-container')[0])">
+                            <img src="img/menu bar.png" alt="" class="dropDownBtn">
+                        </div>
+                    </div>
+
+                    <div class="pc-layout align-items-center">
+                        <div class="input-buscar-container d-flex align-items-center">
+                            <input type="text" id="input-header" required="required">
+                            <label class="placeholder-nav" for="input-header">
+                                <img src="img/Search Icon.png" alt="">
+                                <span>Buscar</span>
+                            </label>
+                        </div>
+                        <div class="perfil-icon-container">
+                            <img src="img/Perfil Icon.png" alt="" id="dropDownHeader" class="dropDownBtn"
+                                onclick="abrirDropDown(document.getElementsByClassName('dropDown-perfil-icon')[0])">
+                            <div class="dropDown-perfil-icon dropDown" id="dropDown-perfil-icon">
+
+                                <div class="line1 d-flex align-items-center mb-3">
+                                    <a href="login.html">
+                                        <img src="img/Perfil Icon.png" alt="">
+                                        <span>Entre ou cadastre-se</span>
+                                    </a>
+                                </div>
+                                <div class="line2 d-flex align-items-center mb-3">
+                                    <a href="../Carrinho/index.html">
+                                        <img src="img/Carrinho Icon.png" alt="">
+                                        <span>Meu Carrinho</span>
+                                    </a>
+                                </div>
+                                <div class="line3 d-flex align-items-center">
+                                    <a href="favoritos.html">
+                                        <img src="img/Favoritos Icon.png" alt="">
+                                        <span>Meus Favoritos</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="mobile-input">
+                <div class="input-buscar-container-mobile d-flex align-items-center">
+                    <input type="text" id="input-header-mobile" required="required" class="container-fluid">
+                    <label class="placeholder-nav" for="input-header-mobile">
+                        <img src="img/Search Icon.png" alt="">
+                        <span>Buscar</span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+        <div class="side-menu-container dropDown">
+            <div class="side-menu">
+                <div class="close-icon-side-bar"
+                    onclick="closeDropDown(document.getElementsByClassName('side-menu-container')[0])">
+                    <img src="img/close-icon.png" alt="">
+                </div>
+                <div class="topicos-side-bar">
+                    <ul>
+                        <li><a href="#">Cadastre-se</a></li>
+                        <li><a href="#">Entrar na conta</a></li>
+                        <li><a href="#">Lançamentos</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+    </section>
+    <h1 id="VIBE">VIBE</h1>
+    <div id="Cont">
+    <img id="VibeEmp"src="img/VibeEmp.png">
+    </div>
+    <p id="VibeEmpTXT">A VIBE é uma empresa de artigos esportivos, que começou com um grupo de estudantes cursando o <br>Ensino Médio. O objetivo da empresa é passar, por meio dos produtos, um momento vibrante e <br>empolgante.</p>
+    <h1 id="Evol">EVOLUÇÃO DA LOGOMARCA</h1>
+    <div class="imagem-linha">
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes.png" alt="Logo01" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes2.png" alt="Logo02" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes2-1.png" alt="Logo03" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes2-2.png" alt="Logo04" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes3.png" alt="Logo05" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes3-1.png" alt="Logo06" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes4.png" alt="Logo07" draggable="false"></a>
+            <h2 id="VFINAL">Atual</h2>
+        </div>
+    </div>
+
+    <h1 id="Var">VARIAÇÕES DA LOGOMARCA</h1>
+
+    <h2 class="P2">DEGRADÊ</h2>
+    <div class="imagem-linha">
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes4-1.png" alt="Logo01" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes4.3.png" alt="Logo02" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes4-2.png" alt="Logo03" draggable="false"></a>
+        </div>
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/logoVibes4-3.png" alt="Logo04" draggable="false"></a>
+        </div>
+    </div>
+
+    <h2 class="P3">MONOCROMÀTICAS</h2>
+    <div class="imagem-linha">
+        <div class="imagem-card">
+            <a><img class="Logos" src="img/VibeLogo/monocromático positivo 1.png" alt="Logo01" draggable="false"></a>
+        </div>
+        <div class="imagem-cardNeg">
+            <div>
+            <a><img class="Logos" src="img/VibeLogo/MONOCROMATICA NEGATIVA 2 1.png" alt="Logo02" draggable="false"></a>
+            </div>
+        </div>
+    </div>
+
+    
+    <p id="U1">É um Designer e está com dúvida ao usar nossas logomarcas ou qualquer outro tipo de arte?<br> Entre em contato nas nossas redes sociais!</p>
+    <p id="U2"><strong>Qualquer uso comercial sem permissão ocasionará a penalidades criminais.</strong></p> 
+
+    <footer class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div
+            class="coluns-container container-fluid row flex-nowrap d-flex flex-column flex-lg-row justify-content-between">
+            <ul class="coluns-list col-lg-9 row d-flex justify-content-between" id="footer-pc-vision">
+                <div class="first-col col-3">
+                    <li class="title-list">Ajuda</li>
+                    <li class="subtitle-list">Dúvidas</li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Segunda via da nota fiscal</p>
+                        <p class="desc-content">Entre em contato com o suporte VIBE para solicitar.</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Vantagens de ser um membro VIBE</p>
+                        <p class="desc-content">Acesso a promoções exclusivas, pontos de recompensa e frete grátis</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Canais de atendimento</p>
+                        <p class="desc-content">Chat online, email: vibes<span class="special-char">@</span>gmail.com,
+                            telefone: (xx) xxxxx-xxxx</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Esqueci a minha senha</p>
+                        <p class="desc-content">Clique em ”Esqueci a minha senha?” no login e siga as instruções.</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Como realizar uma compra no site</p>
+                        <p class="desc-content">Selecione os produtos, adicione ao carrinho, vá para o checkout e siga
+                            as etapas.</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Esqueci meu email de cadastro</p>
+                        <p class="desc-content">Contate o suporte VIBE para recuperar as informações de conta</p>
+                    </li>
+                </div>
+                <div class="second-col col-3">
+                    <li class="content-list mt-0">
+                        <p class="subtitle-content">Alterar o carrinho de compras</p>
+                        <p class="desc-content">Vá ao carrinho, ajuste as quantidades ou remova produtos conforme
+                            necessário.</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">
+                            Alteração de endereços cadastrados</p>
+                        <p class="desc-content">Acesse a sua conta, vá para as configurações e atualize os dados de
+                            endereço.</p>
+                    </li>
+                    <li class="subtitle-list">Meus pedidos</li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Pagamentos</p>
+                        <p class="desc-content">Via Mastercard, Visa, Amex, Elo, Boleto e PIX</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Fale conosco</p>
+                        <p class="desc-content">email: vibe<span class="special-char">@</span>gmail.com<br>telefone:
+                            (xx)
+                            xxxxx-xxxx</p>
+                    </li>
+                </div>
+                <div class="third-col col-3">
+                    <li class="title-list">Sobre VIBE</li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Feita para jogar</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Sustentabilidade</p>
+                    </li>
+                    <li class="content-list">
+                        <p class="subtitle-content">Sobre VIBE</p>
+                    </li>
+                </div>
+
+            </ul>
+            <div class="coluns-list col-12 row d-flex d-lg-none justify-content-center" id="footer-mobile-vision">
+
+                <div class="container-dropDown-footer">
+                    <div class="title-dropDown-footer" onclick="abrirDropDown(document.getElementsByClassName('content-dropDown-footer')[0])">
+                        <p class="title-dropDown">AJUDAS</p>
+                        <p class="plus-icon">+</p>
+                    </div>
+                    <div class="content-dropDown-footer ">
+                        <ul>
+                            <li class="subtitle-list">Dúvidas</li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Segunda via da nota fiscal</p>
+                                <p class="desc-content">Entre em contato com o suporte VIBE para solicitar.</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Vantagens de ser um membro VIBE</p>
+                                <p class="desc-content">Acesso a promoções exclusivas, pontos de recompensa e frete
+                                    grátis</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Canais de atendimento</p>
+                                <p class="desc-content">Chat online, email: vibes<span
+                                        class="special-char">@</span>gmail.com,
+                                    telefone: (xx) xxxxx-xxxx</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Esqueci a minha senha</p>
+                                <p class="desc-content">Clique em ”Esqueci a minha senha?” no login e siga as
+                                    instruções.</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Como realizar uma compra no site</p>
+                                <p class="desc-content">Selecione os produtos, adicione ao carrinho, vá para o checkout
+                                    e siga
+                                    as etapas.</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Esqueci meu email de cadastro</p>
+                                <p class="desc-content">Contate o suporte VIBE para recuperar as informações de conta
+                                </p>
+                            </li>
+                            <li class="content-list mt-0">
+                                <p class="subtitle-content">Alterar o carrinho de compras</p>
+                                <p class="desc-content">Vá ao carrinho, ajuste as quantidades ou remova produtos conforme
+                                    necessário.</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">
+                                    Alteração de endereços cadastrados</p>
+                                <p class="desc-content">Acesse a sua conta, vá para as configurações e atualize os dados de
+                                    endereço.</p>
+                            </li>
+                            <li class="subtitle-list">Meus pedidos</li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Pagamentos</p>
+                                <p class="desc-content">Via Mastercard, Visa, Amex, Elo, Boleto e PIX</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-dropDown-footer">
+                    <div class="title-dropDown-footer" onclick="abrirDropDown(document.getElementsByClassName('content-dropDown-footer')[1])">
+                        <p class="title-dropDown">SOBRE VIBE</p>
+                        <p class="plus-icon">+</p>
+                    </div>
+                    <div class="content-dropDown-footer" >
+                        <ul>
+                            <li class="content-list">
+                                <p class="subtitle-content">Feita para jogar</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Sustentabilidade</p>
+                            </li>
+                            <li class="content-list">
+                                <p class="subtitle-content">Sobre VIBE</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-dropDown-footer mb-4">
+                    <div class="title-dropDown-footer " onclick="abrirDropDown(document.getElementsByClassName('content-dropDown-footer')[2])">
+                        <p class="title-dropDown">FALE CONOSCO</p>
+                        <p class="plus-icon">+</p>
+                    </div>
+                    <div class="content-dropDown-footer">
+                        <ul>
+                            <li class="subtitle-content mb-4">email: vibe<span class="special-char">@</span>gmail.com<br>telefone:
+                                (xx)
+                                xxxxx-xxxx</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="coluns-list col-lg-3">
+                <div class="redes-sociais-container mb-5">
+                    <div class="title-redes-sociais title-footer-third-col mb-2">
+                        <p>REDES SOCIAIS</p>
+                    </div>
+                    <div class="imgs-redes-sociais">
+                        <img src="img/Facebook-icon.png" alt="">
+                        <img src="img/Instagram Icon.png" alt="">
+                        <img src="img/Youtube Icon.png" alt="">
+                    </div>
+                </div>
+                <div class="formas-pag-container">
+                    <div class="title-formas-pag title-footer-third-col mb-2">
+                        <p>FORMAS DE PAGAMENTO</p>
+                    </div>
+                    <div class="imgs-formas-pag row justify-content-start">
+                        <div class="col-3">
+                            <img src="img/Mastercard Icon.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/Visa Icon.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/Amex Icon.png" alt="">
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3">
+                            <img src="img/Elo Icon.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/Boleto Icon.png" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/Pix Icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vibe-logo-footer-container d-flex justify-content-center mt-5">
+            <img src="img/vibe logo footer.png" alt="">
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
