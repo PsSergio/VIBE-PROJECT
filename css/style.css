@@ -43,7 +43,6 @@ header{
     padding: 2em 0;
     padding-bottom: .5em;
     z-index: 999;
-    position: sticky;
 }
 
 nav{
