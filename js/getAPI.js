@@ -1,8 +1,15 @@
 const BASEURL_PRODUTOS = "http://localhost:8080/produto/all"
 
-function organizarElementosProduto(img, name, subDesc, price){
-    const PokemonCard = document.createElement("div")
-    PokemonCard.classList.add("product-card")
+function organizarElementosProduto(img, name, subDesc, price, id){
+    const ProductCard = document.createElement("div")
+    ProductCard.classList.add("product-card")
+    ProductCard.id = id
+
+    ProductCard.addEventListener("click", () =>{
+        getIDcard(id)
+        window.location.href = "produto.html";
+
+    })
     // PokemonCard.classList.add("col-4")
     
     //
@@ -14,8 +21,6 @@ function organizarElementosProduto(img, name, subDesc, price){
     imgCard.src = img
     imgCard.classList.add("product-img")
     // imgCard.classList.add("img-fluid")
-
-    // imgCardContainer.appendChild(imgCard)
 
     const nameCard = document.createElement("p")
     nameCard.innerHTML = name
@@ -29,29 +34,33 @@ function organizarElementosProduto(img, name, subDesc, price){
     priceCard.innerHTML = "R$"+price
     priceCard.classList.add("product-price")
 
-    PokemonCard.appendChild(imgCard)
-    PokemonCard.appendChild(nameCard)
-    PokemonCard.appendChild(subDescCard)
-    PokemonCard.appendChild(priceCard)
+    ProductCard.appendChild(imgCard)
+    ProductCard.appendChild(nameCard)
+    ProductCard.appendChild(subDescCard)
+    ProductCard.appendChild(priceCard)
 
-    document.getElementsByClassName("products-container")[0].appendChild(PokemonCard)
+    document.getElementsByClassName("products-container")[0].appendChild(ProductCard)
 }
 
 async function getApiProdutos() {
 
-    await fetch(BASEURL_PRODUTOS).then(response => {
+    return await fetch(BASEURL_PRODUTOS).then(response => {
         response.json().then(produtoContainer =>{
             produtoContainer.map(produto =>{
                 const name = produto.descProduto
                 const img = produto.images.front
                 const price = produto.precoProduto
                 const subDesc = produto.subDescProduto
-
-                organizarElementosProduto(img, name, subDesc, price)
+                const id = produto.codigoProduto
+                organizarElementosProduto(img, name, subDesc, price, id)
             })
         })
     })
 
 }
 
-getApiProdutos()
+function getIDcard(id){
+
+    return id
+
+}
