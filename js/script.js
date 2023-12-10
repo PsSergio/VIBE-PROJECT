@@ -52,6 +52,8 @@ function verifyLogin(){
     }
 }
 
+
+
 let cont = 1
 setInterval(function(){
     document.getElementById('radio' +cont).checked=true
@@ -61,17 +63,6 @@ setInterval(function(){
     }
 },7000)
 
-const registrar = document.getElementById("registerNow")
-
-registrar.addEventListener("click", function(event){
-    location.href="cadastro.html"
-})
-
-// const entrarLogin=document.getElementById("enterNow")
-
-// entrarLogin.addEventListener("click", function(event){
-//     location.href="login.html"
-// })
 
 
 
@@ -152,3 +143,4 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
