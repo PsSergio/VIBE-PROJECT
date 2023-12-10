@@ -333,6 +333,13 @@ section{
     margin: 1em;
     margin-left: 0;
     width: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cor-ball:hover{
+
+    transform: scale(1.05);
+
 }
 
 .cor-unica-container p{
@@ -345,6 +352,8 @@ section{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+
 }
 
 #branco-ball{
