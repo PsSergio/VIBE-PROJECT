@@ -79,16 +79,17 @@ section {
 }
 
 .product-img-on {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
-.carrossel-img-container{
+.carrossel-img-container {
 
     --widthIMG: 500px;
     width: var(--widthIMG);
     height: var(--widthIMG);
     overflow: hidden;
     display: flex;
+
 }
 
 
@@ -97,7 +98,8 @@ section {
     border: 1px solid rgb(161, 161, 161);
 }
 
-.avaliacao-container p, .avaliacao-container img{
+.avaliacao-container p,
+.avaliacao-container img {
     margin-right: .3em;
 }
 
@@ -114,25 +116,26 @@ section {
     margin-left: -.3em;
 }
 
-.tamanho-produto-container{
+.tamanho-produto-container {
     width: 500px;
 }
 
-@media (max-width: 1540px){
+@media (max-width: 1540px) {
 
-    .product-img-page-pc-version, .carrossel-img-container {
+    .product-img-page-pc-version,
+    .carrossel-img-container {
         --widthIMG: 400px;
         width: var(--widthIMG);
         height: var(--widthIMG);
         object-fit: cover;
         z-index: 1;
-    
+
     }
-    
+
 
 }
 
-@media (max-width: 1343px){
+@media (max-width: 1343px) {
 
     section {
         padding-right: calc(var(--bs-gutter-x) * 4) !important;
@@ -141,7 +144,7 @@ section {
 
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 
     section {
         padding-right: calc(var(--bs-gutter-x) * 1) !important;
@@ -152,15 +155,25 @@ section {
 
 @media (max-width: 992px) {
 
-    .carrossel-img-container{
+    .product-img-page {
+        --widthIMG: 90vw;
+        width: var(--widthIMG);
+        height: var(--widthIMG);
+        object-fit: cover;
+        z-index: 1;
+        opacity: 0;
+        position: absolute;
+    }
 
-        --widthIMG: 100vw;
+    .carrossel-img-container {
+
+        --widthIMG: 90vw;
         width: var(--widthIMG);
         height: var(--widthIMG);
         overflow: hidden;
         display: flex;
-        padding-right: calc(var(--bs-gutter-x) * 0 ) !important;
-        padding-left: calc(var(--bs-gutter-x) * 0 ) !important;
+        padding-right: calc(var(--bs-gutter-x) * 0) !important;
+        padding-left: calc(var(--bs-gutter-x) * 0) !important;
     }
 
     .product-container-mobile-version div,
@@ -180,15 +193,6 @@ section {
         margin-top: 3em;
     }
 
-    .product-img-page {
-        --widthIMG: 100vw;
-        width: var(--widthIMG);
-        height: var(--widthIMG);
-        object-fit: cover;
-        z-index: 1;
-
-    }
-
     .tamanho-card {
         margin-right: .2em !important;
         margin-bottom: .2em !important;
@@ -201,9 +205,9 @@ section {
         margin-right: .4em;
     }
 
-    
 
-   
+
+
 
     .pacote-card {
         --widthIMG: 90px;
@@ -244,7 +248,7 @@ section {
         height: 25px;
     }
 
-    .tamanho-produto-container{
+    .tamanho-produto-container {
         width: 100%;
     }
 
