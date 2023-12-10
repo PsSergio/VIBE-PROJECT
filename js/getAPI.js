@@ -1,13 +1,14 @@
 const BASEURL_PRODUTOS = "http://localhost:8080/produto/all"
-
 function organizarElementosProduto(img, name, subDesc, price, id){
     const ProductCard = document.createElement("div")
     ProductCard.classList.add("product-card")
     ProductCard.id = id
 
     ProductCard.addEventListener("click", () =>{
-        getIDcard(id)
-        window.location.href = "produto.html";
+
+        localStorage.setItem('idProduto', id)
+        
+        window.location.href = "produto.html"
 
     })
     // PokemonCard.classList.add("col-4")
@@ -56,11 +57,5 @@ async function getApiProdutos() {
             })
         })
     })
-
-}
-
-function getIDcard(id){
-
-    return id
 
 }
