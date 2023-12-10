@@ -514,7 +514,7 @@ footer p, footer ul{
 .login-information{
     margin-bottom: 2vh;
     font-size: 20px;
-    /* font-family: 'LEMON MILK BOLD'; */
+    font-family: 'LEMON MILK BOLD';
 }
 
 .inputs{
@@ -858,20 +858,16 @@ footer p, footer ul{
     display: flex;
 }
 
-.img-produtos-confira-mobile1{
-    width:30%;
-}
-
 .texts-products-confira-mobile{
     margin-top: 2vh;
-    width: 95%;
+    max-width: 80%;
     font-family: 'COCOGOOSE ULTRALIGHT';
     font-size: 12px;
     text-align: justify;
 }
 
 .img-2-mobile{
-    height: 60vh;
+    height:60vh;
     /* width: 0vw; */
 }
 
@@ -885,176 +881,6 @@ footer p, footer ul{
     font-size: 25px;
 }
 
-.p2{
-    text-align: left;
-    font-size: 50px;
-    margin: 0px 225px;
-    }
-      
-    .wrapper{
-        display: flex;
-        max-width: 1000px;
-        position: relative;
-        margin: 0 auto;
-      }
-      .wrapper i{
-        top: 50%;
-        height: 44px;
-        width: 44px;
-        color: #343F4F;
-        cursor: pointer;
-        font-size: 1.15rem;
-        position: absolute;
-        text-align: center;
-        line-height: 44px;
-        background: #fff;
-        border-radius: 50%;
-        transform: translateY(-50%);
-        transition: transform 0.1s linear;
-      }
-      .wrapper i:active{
-        transform: translateY(-50%) scale(0.9);
-      }
-      .wrapper i:hover{
-        background: #f2f2f2;
-      }
-      .wrapper i:first-child{
-        left: -22px;
-        display: none;
-      }
-      .wrapper i:last-child{
-        right: -22px;
-      }
-      .wrapper .carousel{
-        font-size: 0px;
-        cursor: pointer;
-        overflow: hidden;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-      }
-      .carousel.dragging{
-        cursor: grab;
-        scroll-behavior: auto;
-      }
-      .carousel.dragging img{
-        pointer-events: none;
-      }
-      .carousel img{
-        height: 340px;
-        object-fit: cover;
-        user-select: none;
-        margin-left: 14px;
-        width: calc(100% / 3);
-      }
-      .carousel img:first-child{
-        margin-left: 0px;
-      }  
-
-      .fotos {
-        height: 100%;
-        width: 100%;
-         
-    }
-    
-    .imagem-linha {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        flex-wrap: wrap;
-    }
-    
-    .imagem-card {
-        text-align: center;
-        padding: 10px;
-        width: 30%;
-    }
-
-    .imagem-card2 {
-        text-align: center;
-        padding: 10px;
-        margin-top: -25px;
-    }
-    
-    .imagem-descricao {
-        margin-top: 10px;
-    }
-    .card{
-        margin: 0 .5em;
-        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-        border: none;
-    }
-    
-    
-      .wrapper{
-        display: flex;
-        max-width: 1200px;
-        position: relative;
-      }
-      .wrapper i{
-        top: 50%;
-        height: 44px;
-        width: 44px;
-        color: #343F4F;
-        cursor: pointer;
-        font-size: 1.15rem;
-        position: absolute;
-        text-align: center;
-        line-height: 44px;
-        background: #fff;
-        border-radius: 50%;
-        transform: translateY(-50%);
-        transition: transform 0.1s linear;
-      }
-      .wrapper i:active{
-        transform: translateY(-50%) scale(0.9);
-      }
-      .wrapper i:hover{
-        background: #f2f2f2;
-      }
-      .wrapper i:first-child{
-        left: -22px;
-        display: none;
-      }
-      .wrapper i:last-child{
-        right: -22px;
-      }
-      .wrapper .carousel{
-        font-size: 2em;
-        cursor: pointer;
-        overflow: hidden;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-      }
-      .carousel{
-        display: flex;
-      }
-      
-      .carousel div{
-        margin-right: .5em;
-      }
-      
-      .carousel div.dragging{
-        cursor: grab;
-        scroll-behavior: auto;
-      }
-      .carousel div.dragging img{
-        pointer-events: none;
-      }
-      .carousel div img{
-        height: 340px;
-        object-fit: cover;
-        user-select: none;
-        margin-left: 14px;
-        width: 340px;
-      }
-      .carousel div img:first-child{
-        margin-left: 0px;
-      }
-
-    .DsCarousel{
-        font-size: 18px;
-    }
 
 @media (max-width: 1480px){
 
@@ -1262,9 +1088,27 @@ footer p, footer ul{
     .produtos-confira-mobile{
         display: block;
     }
+
+    .img-2-mobile{
+        height:70vh;
+        width: 30vw;
+    }
+
+    .texts-products-confira-mobile{
+        width: 90%;
+    }
+
+    .inf-text-products-mobile{
+        width: 100%;
+    }
 }
 
 @media (max-width:675px){
+
+    .texts-products-confira-mobile{
+        width: 90%;
+    }
+
     #back-btn , #continue-btn{
         min-height: 5vh;
         min-width: 18vw;
@@ -1290,9 +1134,19 @@ footer p, footer ul{
         height: 95%;
     }
 
+    .texts-products-confira-mobile{
+        margin-top: 2vh;
+        min-width: 95%;
+        font-family: 'COCOGOOSE ULTRALIGHT';
+        font-size: 12px;
+        text-align: justify;
+    }
+
     .img-bunner2{
         height: 10vh;
     }
+
+    
 }
 
 @media (max-width:475px){
@@ -1381,6 +1235,12 @@ footer p, footer ul{
         margin-left: -48%;
         font-size: 25px;
     }
+
+    .img-2-mobile{
+        height:60vh;
+        /* width: 0vw; */
+    }
+
 }
 
 @media (max-width: 392px){
