@@ -538,6 +538,9 @@ footer p, footer ul{
 
 #enterNow{
     cursor: pointer;
+    color: #737373;
+    text-decoration: none;
+    color: inherit;
 }
 
 .nms-nmrl{
@@ -646,6 +649,10 @@ footer p, footer ul{
    
 }
 
+#registerNow{
+    cursor: pointer;
+}
+
 .check, .register{
      color: #3c3c3c;
 }
@@ -653,6 +660,7 @@ footer p, footer ul{
 .text-decoration{
     margin-left: 0.2vw;
     text-decoration: underline;
+    color: #3c3c3c;
 }
 
 /* BUNNER */

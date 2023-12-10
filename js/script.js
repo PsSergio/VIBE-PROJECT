@@ -61,11 +61,18 @@ setInterval(function(){
     }
 },7000)
 
-const entrarLogin=document.getElementById("enterNow")
+const registrar = document.getElementById("registerNow")
 
-entrarLogin.addEventListener("click", function(event){
-    location.href="login.html"
+registrar.addEventListener("click", function(event){
+    location.href="cadastro.html"
 })
+
+// const entrarLogin=document.getElementById("enterNow")
+
+// entrarLogin.addEventListener("click", function(event){
+//     location.href="login.html"
+// })
+
 
 
 const carousel = document.getElementsByClassName("carousel")[0]
