@@ -1,65 +1,78 @@
-const img = document.querySelectorAll(".product-img-page-pc-version")
+const imgPC = document.querySelectorAll(".product-img-page-pc-version")
+const imgMobile = document.querySelectorAll(".product-img-page")
 
 const arrowLeft = document.getElementsByClassName("arrow-left")[0]
 const arrowRight = document.getElementsByClassName("arrow-right")[0]
+const arrowLeft2 = document.getElementsByClassName("arrow-left")[1]
+const arrowRight2 = document.getElementsByClassName("arrow-right")[1]
 
 let currentImg = 0
 
-function hideImg (){
+function hideImg (img){
 
     img.forEach(image => image.classList.remove("product-img-on"))
 
 }
 
-function showImg(){
+function showImg(img){
 
     img[currentImg].classList.add("product-img-on")
-    console.log(img[currentImg])
 
 }
 
-console.log(img[3].src)
 
-function prevSlide(){
+function prevSlide(img){
 
-    hideImg()
+    hideImg(img)
     if(currentImg == 0){
         if(img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/...' || img[3].src == 'http://127.0.0.1:5500/...'){
             currentImg = 2
         }else{
-            currentImg = img.length-1
+            currentImg = imgPC.length-1
         }
     }else{
         currentImg--
     }
-    showImg()
+    showImg(img)
 
 }
 
-function nextSlide(){
-    hideImg()
+function nextSlide(img){
+    hideImg(img)
     
     if((img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/...' || img[3].src == 'http://127.0.0.1:5500/...') && currentImg == 2){
         currentImg=0
-    }else if(currentImg == img.length-1){
+    }else if(currentImg == imgPC.length-1){
 
         currentImg=0
 
     }else {
         currentImg++
     }
-    showImg()
+    showImg(img)
 }
 
 arrowLeft.addEventListener("click", () =>{
 
-    prevSlide()
+    prevSlide(imgPC)
 
 })
 
 arrowRight.addEventListener("click", () =>{
 
-    nextSlide()
+    nextSlide(imgPC)
+
+})
+
+arrowLeft2.addEventListener("click", () =>{
+
+    prevSlide(imgMobile)
+
+})
+
+arrowRight2.addEventListener("click", () =>{
+
+    nextSlide(imgMobile)
 
 })
 
