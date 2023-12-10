@@ -43,6 +43,7 @@ header{
     padding: 2em 0;
     padding-bottom: .5em;
     z-index: 999;
+    position: sticky;
 }
 
 nav{
@@ -447,8 +448,8 @@ footer p, footer ul{
 }
 
 .carrossel-content{
-    width:65%;
-    height: 65%;
+    width:80%;
+    height: 80%;
     overflow: hidden;
 }
 
@@ -571,23 +572,29 @@ footer p, footer ul{
     border: 2px solid #000;
 }
 
-/* .produtos-confira{
+.produtos-confira{
     width: 100%;
-    height: 80%;
+    height: 20%;
     margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .produtos-confira-content{
-    width: 70%;
+    width: 92%;
     justify-content: space-around;
     margin-bottom: 5vh;
 }
 
 .img-produtos-confira{
     background-color: #d8d8d8;
-    width:40%;
-    height: 50%;
+    width:50%;
+    height: 30%;
     padding: 3vh;
+    align-items: center;
+    display: flex;
 }
 
 .texts-products-confira{
@@ -601,7 +608,7 @@ footer p, footer ul{
 
 .inf-text-products{
     font-family: 'COCOGOOSE ULTRALIGHT';
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .img-produtos-confira img{
@@ -612,7 +619,22 @@ footer p, footer ul{
 .img-produtos-confira{
     background-color: #d8d8d8;
     height: 20%; 
-} */
+    align-items: center;
+    display: flex;
+}
+
+.img-produtos-confira2{
+    background-color: #d8d8d8;
+    width: 40%;
+    height: 10%;
+    align-items: center;
+    display: flex;
+    margin-left: -4%;
+}
+
+.img-2{
+    height: 10%;
+}
 
 .bunner2-container{
     width: 100%;
@@ -623,7 +645,7 @@ footer p, footer ul{
 }
 
 .bunner2-content{
-    width: 65%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -631,8 +653,48 @@ footer p, footer ul{
 }
 
 .img-bunner2{
-    width: 65%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+}
+
+.produtos-confira-mobile{
+    display: none;
+}
+
+.produtos-confira-mobile-content{
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+.title-text-products-mobile{
+    margin-top: 2vh;
+    font-family: 'LEMON MILK BOLD';
+}
+
+
+.img-produtos-confira-mobile{
+    width:80%;
+    background-color: #d8d8d8;
+    height: 20%;
+    align-items: center;
+    display: flex;
+}
+
+.img-produtos-confira-mobile1{
+    width:30%;
+}
+
+.texts-products-confira-mobile{
+    margin-top: 2vh;
+    width: 80%;
+    font-family: 'COCOGOOSE ULTRALIGHT';
+    font-size: 12px;
+    text-align: justify;
+}
+
+.img-2-mobile{
+    height: 50vh;
+    width: 10vw;
 }
 
 @media (max-width: 1480px){
@@ -666,6 +728,9 @@ footer p, footer ul{
         height: 15vh;
     }
     
+    .inf-text-products{
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -795,6 +860,16 @@ footer p, footer ul{
     }
 }
 
+@media (max-width:750px){
+    .produtos-confira{
+        display: none;
+    }
+
+    .produtos-confira-mobile{
+        display: block;
+    }
+}
+
 @media (max-width:675px){
     #back-btn , #continue-btn{
         min-height: 5vh;
@@ -810,6 +885,8 @@ footer p, footer ul{
         min-width: 20vw;
         margin-bottom: 2vh;
     }
+
+    
 
     .img-bunner2{
         height: 10vh;
