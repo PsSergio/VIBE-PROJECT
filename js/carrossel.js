@@ -20,26 +20,28 @@ function showImg(){
 
 console.log(img[3].src)
 
-arrowLeft.addEventListener("click", () =>{
+function prevSlide(){
 
     hideImg()
     if(currentImg == 0){
-        if(img[3].src == undefined){
-            console.log('a')
+        if(img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/...' || img[3].src == 'http://127.0.0.1:5500/...'){
+            currentImg = 2
+        }else{
+            currentImg = img.length-1
         }
-        currentImg = img.length-1
     }else{
         currentImg--
     }
     showImg()
 
+}
 
-})
-
-arrowRight.addEventListener("click", () =>{
-
+function nextSlide(){
     hideImg()
-    if(currentImg == img.length-1){
+    
+    if((img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/...' || img[3].src == 'http://127.0.0.1:5500/...') && currentImg == 2){
+        currentImg=0
+    }else if(currentImg == img.length-1){
 
         currentImg=0
 
@@ -47,6 +49,17 @@ arrowRight.addEventListener("click", () =>{
         currentImg++
     }
     showImg()
+}
+
+arrowLeft.addEventListener("click", () =>{
+
+    prevSlide()
+
+})
+
+arrowRight.addEventListener("click", () =>{
+
+    nextSlide()
 
 })
 
