@@ -214,7 +214,11 @@ nav ul li{
 #VibeEmpTXT{
     text-align: center;
     font-size: 30px;
-    font-family: 'COCOGOOSE';
+    font-family: 'COCOGOOSE LIGHT';
+}
+
+.texts-vibe-emp{
+    font-family: 'COCOGOOSE LIGHT';
 }
 
 #Evol{

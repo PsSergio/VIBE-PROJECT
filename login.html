@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    
+
     <section id="login-container">
         <div class="login-content">
             <div class="logo-display">
@@ -33,11 +33,13 @@
             </div>
             <div class="btn-display-flex-row">
                 <button id="back-btn" onclick="backToPrincipalPage()">Voltar</button>
-                <button id="continue-btn" onclick="verifyLogin()" >Conectar</button>
+                <button id="continue-btn" onclick="verifyLogin()">Conectar</button>
             </div>
             <div class="register">
                 <p>Não tem uma conta?</p>
-                <p class="text-decoration">Registre-se agora!</p>
+                <a href="cadastro.html">
+                    <p class="text-decoration" id="registerNow">Registre-se agora!</p>
+                </a>
             </div>
         </div>
 
@@ -194,7 +196,8 @@
                                 <p class="subtitle-content">Sustentabilidade</p>
                             </li>
                             <li class="content-list">
-                                <p class="subtitle-content" onclick="window.location.href='sobrevibe.html'">Sobre VIBE</p>
+                                <p class="subtitle-content" onclick="window.location.href='sobrevibe.html'">Sobre VIBE
+                                </p>
                             </li>
                         </ul>
                     </div>

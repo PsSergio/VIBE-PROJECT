@@ -4,238 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar Produtos VIBE</title>
+    <title>Faça seu login!</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body onload="getApiProdutos()">
-    <header class="container-fluid d-flex justify-content-center">
-        <nav class="container-fluid d-flex row">
-            <div
-                class="nav-principal-container container-fluid d-flex justify-content-between align-items-center col mb-4">
-                <div class="left-items-nav">
-                    <img src="img/LogoVIBE.png" alt="" class="logo-vibe-nav">
-                </div>
-                <div class="mid-items-nav">
-                    <ul class="d-flex align-items-center mb-0">
-                        <li><a href="index.html">Lançamentos</a></li>
-                        <li><a href="busca.html">Produtos</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                    </ul>
-                </div>
-                <div class="rigth-items-nav">
-                    <div class="mobile-layout">
-                        <img src="img/carrinho-mobile.png" alt="">
-                        <img src="img/favoritos-mobile.png" alt="">
-                        <div class="menu-bar-container"
-                            onclick="abrirDropDown(document.getElementsByClassName('side-menu-container')[0])">
-                            <img src="img/menu bar.png" alt="" class="dropDownBtn">
-                        </div>
+<body>
+
+    <section id="cadastro-container">
+        <div class="cadastro-content">
+            <div class="logo-display">
+                <img src="img/LogoVIBE.png" alt="logo-vibe" class="logo">
+            </div>
+            <div class="cadastro-information">
+                <p>Torne-se um membro da VIBE!</p>
+            </div>
+            <div class="login-inpts" id="inputs-Pc">
+                <div class="inputs">
+                    <input type="email" placeholder="Email" id="EmailInput" class="inf-input">
+                    <input type="text" placeholder="Senha" id="SenhaInput" class="inf-input">
+                    <input type="text" placeholder="Confirme sua senha" id="ConfirmSenhaInput" class="inf-input">
+                    <div class="nms-nrml d-flex flex-row">
+                        <input type="text" placeholder="Primeiro nome" id="firstNameInput" class="inf-input">
+                        <input type="text" placeholder="Sobrenome" id="secondNameInput" class="inf-input">
                     </div>
 
-                    <div class="pc-layout align-items-center">
-                        <div class="input-buscar-container d-flex align-items-center">
-                            <input type="text" id="input-header" required="required">
-                            <label class="placeholder-nav" for="input-header">
-                                <img src="img/Search Icon.png" alt="">
-                                <span>Buscar</span>
-                            </label>
-                        </div>
-                        <div class="perfil-icon-container">
-                            <img src="img/Perfil Icon.png" alt="" id="dropDownHeader" class="dropDownBtn"
-                                onclick="abrirDropDown(document.getElementsByClassName('dropDown-perfil-icon')[0])">
-                            <div class="dropDown-perfil-icon dropDown" id="dropDown-perfil-icon">
-
-                                <div class="line1 d-flex align-items-center mb-3">
-                                    <a href="login.html">
-                                        <img src="img/Perfil Icon.png" alt="">
-                                        <span>Entre ou cadastre-se</span>
-                                    </a>
-                                </div>
-                                <div class="line2 d-flex align-items-center mb-3">
-                                    <a href="carrinho.html">
-                                        <img src="img/Carrinho Icon.png" alt="">
-                                        <span>Meu Carrinho</span>
-                                    </a>
-                                </div>
-                                <div class="line3 d-flex align-items-center">
-                                    <a href="favoritos.html">
-                                        <img src="img/Favoritos Icon.png" alt="">
-                                        <span>Meus Favoritos</span>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
+                    <input type="date" placeholder="Data de Nascimento" id="SenhaInput" class="inf-input">
                 </div>
             </div>
+            <div class="login-inpts" id="inputs-cell">
+                <div class="inputs">
+                    <input type="email" placeholder="Email" id="EmailInput" class="inf-input">
+                    <input type="text" placeholder="Senha" id="SenhaInput" class="inf-input">
+                    <input type="text" placeholder="Confirme sua senha" id="ConfirmSenhaInput" class="inf-input">
 
-            <div class="mobile-input">
-                <div class="input-buscar-container-mobile d-flex align-items-center">
-                    <input type="text" id="input-header-mobile" required="required" class="container-fluid">
-                    <label class="placeholder-nav" for="input-header-mobile">
-                        <img src="img/Search Icon.png" alt="">
-                        <span>Buscar</span>
-                    </label>
-                    <img src="img/filtro Icon.png" alt="" class="filtro-icon" onclick="abrirDropDown(document.getElementsByClassName('side-filter-container')[0])">
+                    <input type="text" placeholder="Primeiro nome" id="firstNameInputMobile" class="inf-input">
+                    <input type="text" placeholder="Sobrenome" id="secondNameInputMobile" class="inf-input">
+
+
+                    <input type="date" placeholder="Data de Nascimento" id="SenhaInput" class="inf-input">
                 </div>
             </div>
-        </nav>
-        <div class="side-menu-container dropDown">
-            <div class="side-menu">
-                <div class="close-icon-side-bar"
-                    onclick="closeDropDown(document.getElementsByClassName('side-menu-container')[0])">
-                    <img src="img/close-icon.png" alt="">
-                </div>
-                <div class="topicos-side-bar">
-                    <ul>
-                        <li><a href="cadastro.html">Cadastre-se</a></li>
-                        <li><a href="login.html">Entrar na conta</a></li>
-                        <li><a href="index.html">Lançamentos</a></li>
-                        <li><a href="busca.html">Produtos</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                    </ul>
-                </div>
+            <div class="check">
+                <input type="checkbox" class="checkbox">
+                <p class="remember">Lembrar de mim</p>
             </div>
-        </div>
-    </header>
 
-    <section class="container-fluid" id="busca-section">
 
-        <div class="buscar-input container-fluid mt-4 mb-5">
-            <div class="input-buscar-container-mobile d-flex align-items-center">
-                <input type="text" id="input-header-mobile" required="required" class="container-fluid">
-                <label class="placeholder-nav" for="input-header-mobile">
-                    <img src="img/Search Icon.png" alt="">
-                    <span>Encontre seu produto</span>
-                </label>
+            <div class="btn-display-flex-row">
+                <button id="back-btn" onclick="backToPrincipalPage()">Voltar</button>
+                <button id="continue-btn" onclick="Cadastrar()">Registrar</button>
             </div>
-        </div>
-
-        <div class="products-and-filter-container container-fluid d-flex">
-            <div class="products-container">
-                <!-- <div class="product-card ">
-                    <img src="https://i.im.ge/2023/11/24/AzvT1G.saoPaulo-v1-front.png" alt="" class="product-img">
-                    <p class="product-name">Camiseta VIBE São Paulo Torcedor Masculina</p>
-                    <p class="product-subDesc">Casual</p>
-                    <p class="product-price">R$199,99</p>
-                </div> -->
-            </div>
-            <div class="filter-container-pc-version">
-                <div class="filter-content d-flex flex-column align-items-center">
-                    <div class="title-container mb-4 mt-4">
-                        <p class="title-filter">Especifique seu produto!</p>
-                    </div>
-                    <div class="cores-container">
-                        <p class="cores-title">Cores</p>
-                        <div class="cores-content d-flex">
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="branco-ball"></div>
-                                <p class="branco-desc">Branco</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="preto-ball"></div>
-                                <p class="preto-desc">Preto</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="verde-ball"></div>
-                                <p class="verde-desc">Verde</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="vermelho-ball"></div>
-                                <p class="vermelho-desc">Vermelho</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="ciano-ball"></div>
-                                <p class="ciano-desc">Ciano</p>
-                            </div>
-                            <div class="cor-unica-container">
-                                <div class="cor-ball" id="azul-ball"></div>
-                                <p class="azul-desc">Azul</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tamanho-container mb-4">
-                        <p class="tipos-title">Tipos</p>
-                        <div class="tipos-container">
-                            <div class="checkbox-container">
-                                <input type="checkbox">
-                                <p>Tênis</p>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox">
-                                <p>Camisetas</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="side-filter-container dropDown">
-            <div class="side-filter">
-                <div class="close-icon-side-filter"
-                    onclick="closeDropDown(document.getElementsByClassName('side-filter-container')[0])">
-                    <img src="img/close-icon.png" alt="">
-                </div>
-                <div class="topicos-side-bar">
-                    <div class="filter-container-mobile-vision d-flex flex-column align-items-center">
-                        <div class="title-container mb-4 mt-4">
-                            <p class="title-filter">Especifique seu produto!</p>
-                        </div>
-                        <div class="cores-container">
-                            <p class="cores-title">Cores</p>
-                            <div class="cores-content d-flex">
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="branco-ball"></div>
-                                    <p class="branco-desc">Branco</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="preto-ball"></div>
-                                    <p class="preto-desc">Preto</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="verde-ball"></div>
-                                    <p class="verde-desc">Verde</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="vermelho-ball"></div>
-                                    <p class="vermelho-desc">Vermelho</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="ciano-ball"></div>
-                                    <p class="ciano-desc">Ciano</p>
-                                </div>
-                                <div class="cor-unica-container">
-                                    <div class="cor-ball" id="azul-ball"></div>
-                                    <p class="azul-desc">Azul</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tamanho-container mb-4">
-                            <p class="tipos-title">Tipos</p>
-                            <div class="tipos-container">
-                                <div class="checkbox-container">
-                                    <input type="checkbox">
-                                    <p>Tênis</p>
-                                </div>
-                                <div class="checkbox-container">
-                                    <input type="checkbox">
-                                    <p>Camisetas</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="register">
+                <p>Já tem uma conta?</p>
+                <a href="login.html">
+                    <p class="text-decoration">Entre agora!</p>
+                </a>
+                
             </div>
         </div>
 
     </section>
+
 
     <footer class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div
@@ -387,7 +218,8 @@
                                 <p class="subtitle-content">Sustentabilidade</p>
                             </li>
                             <li class="content-list">
-                                <p class="subtitle-content" onclick="window.location.href='sobrevibe.html'">Sobre VIBE</p>
+                                <p class="subtitle-content" onclick="window.location.href='sobrevibe.html'">Sobre VIBE
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -458,6 +290,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="js/getAPI.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
