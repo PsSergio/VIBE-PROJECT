@@ -725,7 +725,7 @@ footer p, footer ul{
 
 .products-informations{
     margin-top: 3vh;
-    font-family:'COCOGOOSE ULTRALIGHT';
+    font-family: 'COCOGOOSE LIGHT';
     font-size: 16px;
     /* width: 80%; */
     
@@ -770,7 +770,7 @@ footer p, footer ul{
 }
 
 .produtos-confira-content{
-    width: 92%;
+    width: 86%;
     justify-content: space-around;
     margin-bottom: 5vh;
 }
@@ -785,7 +785,8 @@ footer p, footer ul{
 }
 
 .texts-products-confira{
-    width: 20vw;
+    width: 30vw;
+    text-align: justify;
 }
 
 .title-text-products{
@@ -794,7 +795,7 @@ footer p, footer ul{
 }
 
 .inf-text-products{
-    font-family: 'COCOGOOSE ULTRALIGHT';
+    font-family: 'COCOGOOSE LIGHT';
     font-size: 20px;
 }
 
@@ -808,6 +809,7 @@ footer p, footer ul{
     height: 20%; 
     align-items: center;
     display: flex;
+    padding-top: 5vh;
 }
 
 .img-produtos-confira2{
@@ -819,6 +821,14 @@ footer p, footer ul{
     margin-left: -4%;
 }
 
+.img-pc2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20%;
+    height: 90%;
+}
+
 .img-2{
     height: 10%;
 }
@@ -828,7 +838,7 @@ footer p, footer ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    height:20vh;
+    height:30vh;
 }
 
 .bunner2-content{
@@ -858,26 +868,28 @@ footer p, footer ul{
     font-family: 'LEMON MILK BOLD';
 }
 
-
 .img-produtos-confira-mobile{
     width:80%;
     background-color: #d8d8d8;
     height: 20%;
     align-items: center;
     display: flex;
+    padding-top: 5vh;
 }
 
 .texts-products-confira-mobile{
     margin-top: 2vh;
     max-width: 80%;
-    font-family: 'COCOGOOSE ULTRALIGHT';
+    font-family: 'COCOGOOSE LIGHT';
     font-size: 12px;
     text-align: justify;
 }
 
-.img-2-mobile{
-    height:60vh;
-    /* width: 0vw; */
+.img-mobile2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 }
 
 .title-left1{
@@ -888,6 +900,76 @@ footer p, footer ul{
 .title-left{
     margin-left: -42%;
     font-size: 25px;
+}
+
+.cards-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 26vw 28vw 26vw;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.card{
+	background-color: #000;
+	padding: 0px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align:left;
+    transition: all 0.2s ease-in-out;
+    align-items:normal;
+    height: 55%;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card img {
+	width: 100%;
+	height: 60vh;
+}
+
+.card-information{
+    width: 50%;
+    color: #fff;
+    font-family: 'COCOGOOSE DEMIBOLD';
+    margin-left: 1vw;
+    /* font-size: 15px; */
+    position: absolute;
+    z-index: 999;
+    margin-top:45vh;
+}
+
+.btn-know-more{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    min-height: 5vh;
+    width: 10vw;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+    font-family: 'LEMON MILK BOLD';
+    padding: 1vh;
+    
+}
+
+.btn-know-more:hover{
+    background-color: #000;
+    color: #fff;
+    border: 3px solid #fff;
 }
 
 
@@ -937,7 +1019,7 @@ footer p, footer ul{
     }
 
     .img-bunner2{
-        height: 15vh;
+        height: 30vh;
     }
     
     .inf-text-products{
@@ -1072,10 +1154,6 @@ footer p, footer ul{
     .buscar-input{
         display: none;
     }
-
-    
-    
-
 }
 
 @media (max-width:912px){
@@ -1085,7 +1163,7 @@ footer p, footer ul{
     }
 
     .img-bunner2{
-        height: 10vh;
+        height: 20vh;
     }
 }
 
@@ -1109,6 +1187,12 @@ footer p, footer ul{
 
     .inf-text-products-mobile{
         width: 100%;
+    }
+
+
+    .title-left{
+        margin-right: 10%;
+        /* margin-left: -23vh; */
     }
 }
 
@@ -1135,7 +1219,7 @@ footer p, footer ul{
 
     .carrossel-content{
         width: 95%;
-        height: 95%;
+        height:100%;
     }
 
     .img-produtos-confira-mobile{
@@ -1146,16 +1230,23 @@ footer p, footer ul{
     .texts-products-confira-mobile{
         margin-top: 2vh;
         min-width: 95%;
-        font-family: 'COCOGOOSE ULTRALIGHT';
+        font-family: 'COCOGOOSE LIGHT';
         font-size: 12px;
         text-align: justify;
     }
 
-    .img-bunner2{
-        height: 10vh;
+    .bunner2-content{
+        width: 95%;
     }
 
+    .img-bunner2{
+        height: 15vh;
+    }
     
+    .title-left{
+        margin-right: 0;
+        /* margin-left: -23vh; */
+    }
 }
 
 @media (max-width:475px){
@@ -1207,10 +1298,11 @@ footer p, footer ul{
 
     .bunner2-content{
         width: 95%;
+        height: 20%;
     }
 
     .img-bunner2{
-        height: 8vh;
+        height: 12vh;
     }
 
     .product-card img{
