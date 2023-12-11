@@ -25,7 +25,7 @@ function prevSlide(img){
 
     hideImg(img)
     if(currentImg == 0){
-        if(img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/...' || img[3].src == 'http://127.0.0.1:5500/...'){
+        if(img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/null' || img[3].src == 'http://127.0.0.1:5500/null'){
             currentImg = 2
         }else{
             currentImg = imgPC.length-1
@@ -40,7 +40,7 @@ function prevSlide(img){
 function nextSlide(img){
     hideImg(img)
     
-    if((img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/...' || img[3].src == 'http://127.0.0.1:5500/...') && currentImg == 2){
+    if((img[3].src == 'https://pssergio.github.io/VIBE-PROJECT/null' || img[3].src == 'http://127.0.0.1:5500/null') && currentImg == 2){
         currentImg=0
     }else if(currentImg == imgPC.length-1){
 
@@ -75,4 +75,3 @@ arrowRight2.addEventListener("click", () =>{
     nextSlide(imgMobile)
 
 })
-
