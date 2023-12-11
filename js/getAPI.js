@@ -7,6 +7,7 @@ function organizarElementosProduto(img, name, subDesc, price, id){
     ProductCard.addEventListener("click", () =>{
 
         localStorage.setItem('idProduto', id)
+        localStorage.setItem('qtdProdutos', document.getElementsByClassName("product-card").length)
         
         window.location.href = "produto.html"
 

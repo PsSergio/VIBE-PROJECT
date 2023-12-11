@@ -3,14 +3,22 @@
     font-family: 'COCOGOOSE DEMIBOLD';
 }
 
+.tamanho-product-page{
+    font-size: 1.2em;
+}
+
+.name-product-page{
+    font-size: 1.3em;
+}
+
 .subDesc-product-page {
     font-family: 'COCOGOOSE ULTRALIGHT';
-    font-size: .8em;
+    font-size: 1.2em;
 }
 
 .price-product-page {
     font-family: 'LEMON MILK LIGHT';
-    font-size: .8em;
+    font-size: 1.2em;
 }
 
 section {
