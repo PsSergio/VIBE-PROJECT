@@ -1167,7 +1167,7 @@ footer p, footer ul{
 .position-title{
     margin-top: 5vh;
     margin-left: 10%;
-    font-family: 'COCOGOOSE DEMIBOLD';
+    font-family: 'LEMON MILK DEMIBOLD';
 }
 
 .carousel div p{
@@ -1182,7 +1182,7 @@ footer p, footer ul{
 }
 
 .preco-produto-carrossel{
-    font-family: 'LEMON MILK BOLD';
+    font-family: 'LEMON MILK MEDIUM';
 
 }
 
@@ -1191,8 +1191,6 @@ footer p, footer ul{
 
     width: 340px !important;
 }
-
-
 
 @media (max-width: 1480px){
 
