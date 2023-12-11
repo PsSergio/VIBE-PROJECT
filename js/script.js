@@ -63,9 +63,6 @@ setInterval(function(){
     }
 },7000)
 
-
-
-
 const carousel = document.getElementsByClassName("carousel")[0]
 // const DivImg = carousel.querySelector("div")
 firstImg = carousel.querySelectorAll("div")[0]

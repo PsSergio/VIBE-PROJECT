@@ -956,7 +956,7 @@ footer p, footer ul{
 .cards-content{
     width: 100%;
     display: grid;
-    grid-template-columns: 25vw 29vw 25vw;
+    grid-template-columns: 26vw 29.5vw 26vw;
     align-items: center;
     justify-content: center;
     height:80vh;
@@ -984,7 +984,7 @@ footer p, footer ul{
 }
 
 .card-information{
-    width: 55%;
+    width: 50%;
     color: #fff;
     font-family: 'COCOGOOSE DEMIBOLD';
     margin-left: 1vw;
@@ -1399,6 +1399,19 @@ footer p, footer ul{
 
 @media (max-width:675px){
 
+    .cards-container{
+        display: none;
+    }
+
+    .cards-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0 38vw 33vw;
+        align-items: center;
+        justify-content: center;
+        height:50vh;
+    }
+
     .carousel img{
         height: 200px;
         object-fit: cover;
@@ -1494,7 +1507,13 @@ footer p, footer ul{
 }
 
 @media (max-width:475px){
- 
+    #right{
+        margin-right: 4%;
+    }
+
+    #left{
+        margin-left:4%;
+    }
 
     .wrapper .carousel div {
         width: 80%; 
@@ -1712,7 +1731,7 @@ footer p, footer ul{
         /* width: 80%;  */
         /* height: auto; */
         /* margin-left: 8vh;  */
-        margin-right: 10000vw;
+        /* margin-right: 10000vw; */
     }
 
     .wrapper .carousel div {
