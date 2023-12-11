@@ -1065,6 +1065,10 @@ footer p, footer ul{
     scroll-behavior: smooth;
   }
 
+  .p2{
+    font-family: 'COCOGOOSE DEMIBOLD';
+  }
+
   .wrapper .carousel div {
     width: 80%; 
     height: auto;
