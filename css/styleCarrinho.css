@@ -133,20 +133,20 @@ body{
 
   #BuyInfo{
     display: flex;
+    margin-left: 30%
   }
 
   #QNTDC{
-    padding-left: 15%;
     font-family: 'LEMON MILK REGULAR';
   }
 
   #SBC{
-    padding-left: 20%;
+    margin-left: 15%;
     font-family: 'LEMON MILK REGULAR';
   }
  
   #ResumoTXT {
-    padding-left: 45%;
+    padding-left: 50%;
 }
 
 .ResLine {
@@ -179,6 +179,59 @@ body{
     margin-left: 350px;
 }
 
+
+.Quantity button,
+.Quantity .num {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+
+.Quantity button.minus,
+.Quantity button.plus {
+  border-radius: 5px;
+}
+
+
+.Quantity button.plus {
+  margin-left: 5px;
+}
+
+
+.Quantity .num {
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+
+.Quantity2 button,
+.Quantity2 .num2 {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+
+.Quantity2 button.minus2,
+.Quantity2 button.plus2 {
+  border-radius: 5px;
+}
+
+
+.Quantity2 button.plus2 {
+  margin-left: 5px;
+}
+
+
+.Quantity2 .num2 {
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+
 #DescontoIn {
     width: 320px;
     border-radius: 5px;
@@ -186,6 +239,7 @@ body{
 
 .resumo-container {
   display: flex;
+  margin-left: 5%;
 }
 
 .resumo {
@@ -227,152 +281,157 @@ body{
 
 
   
-    .wrapper{
-        display: flex;
-        max-width: 1000px;
-        position: relative;
-        margin: 0 auto;
-        margin-top: 20px;
-      }
-      .wrapper i{
-        top: 50%;
-        height: 44px;
-        width: 44px;
-        color: #343F4F;
-        cursor: pointer;
-        font-size: 1.15rem;
-        position: absolute;
-        text-align: center;
-        line-height: 44px;
-        background: #fff;
-        border-radius: 50%;
-        transform: translateY(-50%);
-        transition: transform 0.1s linear;
-      }
-      .wrapper i:active{
-        transform: translateY(-50%) scale(0.9);
-      }
-      .wrapper i:hover{
-        background: #f2f2f2;
-      }
-      .wrapper i:first-child{
-        left: -22px;
-        display: none;
-      }
-      .wrapper i:last-child{
-        right: -22px;
-      }
-      .wrapper .carousel{
-        font-size: 0px;
-        cursor: pointer;
-        overflow: hidden;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-      }
+.wrapper{
+  display: flex;
+  /* max-width: 90%; */
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 
-      .wrapper .carousel div {
-        width: 100%; 
-        height: auto;
-        margin-left: 0; 
-        margin-right: 20px;
-    }
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  /* font-size: 8rem; */
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 998;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
 
-      .carousel.dragging{
-        cursor: grab;
-        scroll-behavior: auto;
-      }
-      .carousel.dragging img{
-        pointer-events: none;
-      }
-      .carousel img{
-        height: 340px;
-        object-fit: cover;
-        user-select: none;
-        margin-left: 14px;
-        width: calc(100% / 3);
-      }
-      .carousel img:first-child{
-        margin-left: 0px;
-      }  
+.wrapper .carousel div {
+  width: 80%; 
+  height: auto;
+  margin-left: 0; 
+  margin-right: 20px;
+}
 
-      .fotos {
-        height: 100%;
-        width: 100%;
-         
-    }
-    
-      .wrapper{
-        display: flex;
-        max-width: 1200px;
-        position: relative;
-      }
-      .wrapper i{
-        top: 50%;
-        height: 44px;
-        width: 44px;
-        color: #343F4F;
-        cursor: pointer;
-        font-size: 1.15rem;
-        position: absolute;
-        text-align: center;
-        line-height: 44px;
-        background: #fff;
-        border-radius: 50%;
-        transform: translateY(-50%);
-        transition: transform 0.1s linear;
-      }
-      .wrapper i:active{
-        transform: translateY(-50%) scale(0.9);
-      }
-      .wrapper i:hover{
-        background: #f2f2f2;
-      }
-      .wrapper i:first-child{
-        left: -22px;
-        display: none;
-      }
-      .wrapper i:last-child{
-        right: -22px;
-      }
-      .wrapper .carousel{
-        font-size: 2em;
-        cursor: pointer;
-        overflow: hidden;
-        white-space: nowrap;
-        scroll-behavior: smooth;
-        width: 100%; 
-        height: auto;
-        margin-left: 0;
-      }
-      .carousel{
-        display: flex;
-      }
-      
-      .carousel div{
-        margin-right: .5em;
-      }
-      
-      .carousel div.dragging{
-        cursor: grab;
-        scroll-behavior: auto;
-      }
-      .carousel div.dragging img{
-        pointer-events: none;
-      }
-      .carousel div img{
-        height: 340px;
-        object-fit: cover;
-        user-select: none;
-        margin-left: 14px;
-        width: 340px;
-      }
-      .carousel div img:first-child{
-        margin-left: 0px;
-      }
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}  
 
-    .DsCarousel{
-        font-size: 18px;
-    }
+.fotos {
+  height: 80%;
+  width: 80%;
+   
+}
+
+.wrapper{
+  display: flex;
+  max-width: 80%;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 2em;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 100%; 
+  height: auto;
+  margin-left: 0;
+}
+.carousel{
+  display: flex;
+}
+
+.carousel div{
+  margin-right: .5em;
+}
+
+.carousel div.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel div.dragging img{
+  pointer-events: none;
+}
+.carousel div img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: 340px;
+}
+.carousel div img:first-child{
+  margin-left: 0px;
+}
+
+.DsCarousel{
+  font-size: 18px;
+}
 
     footer, section{
         padding-right: calc(var(--bs-gutter-x) * 5) !important;
@@ -730,6 +789,20 @@ body{
       font-family: 'LEMON MILK REGULAR';
   }
 
+  #BuyInfo{
+    display: flex;
+    margin-left: 15%
+  }
+
+  #QNTDC{
+    font-family: 'LEMON MILK REGULAR';
+  }
+
+  #SBC{
+    margin-left: 15%;
+    font-family: 'LEMON MILK REGULAR';
+  }
+
       
       
   }
@@ -742,6 +815,10 @@ body{
   
 
   @media (max-width: 768px) {
+
+    .desconto{
+      margin-left: 5%;
+    }
 
     .wrapper{
         display: flex;
@@ -812,6 +889,30 @@ body{
 
       
       
+}
+
+@media (max-width:675px){
+
+  .carousel img{
+      height: 200px;
+      object-fit: cover;
+      user-select: none;
+      margin-left: 10px;
+      width: 200px;
+    }
+
+  .wrapper{
+      max-width: 90%;
+    }
+
+    .carrossel-content{
+      width: 95%;
+      height:100%;
+  }
+
+  .desconto{
+    margin-left: 25%;
+  }
 }
 
 @media (max-width: 550px){
@@ -891,9 +992,16 @@ body{
 
 @media (max-width: 510px){
 
-    .carousel img{
-        width: 100%;
-      }
+  .wrapper .carousel div {
+    width: 80%; 
+    height: auto;
+    /* margin-left: 8vh;  */
+    margin-right: 10vw;
+}
+
+  .DsCarousel{
+    font-size: 12px;
+}
 
       .ResLine {
         background-color: gray;
@@ -929,10 +1037,17 @@ body{
 
 @media (max-width: 430px){
 
+  .wrapper .carousel div {
+        width: 80%; 
+        height: auto;
+        /* margin-left: 8vh;  */
+        margin-right: 20%;
+    }
+
     .carousel img{
-        width: 260px;
-        height: 200px;
-        margin-left: 20px;
+        height: 100px;
+        margin-left: 10vw;
+        width: 100px;
       }
 
       .fotos {
@@ -963,16 +1078,26 @@ body{
     }
 
     #QNTDC{
-      padding-left: 12%;
       font-family: 'LEMON MILK REGULAR';
       font-size: 12px;
     }
   
     #SBC{
-      padding-left: 15%;
       font-family: 'LEMON MILK REGULAR';
       font-size: 12px;
     }
+
+    #BuyInfo{
+      display: flex;
+      margin-left: 10%
+    }
+ 
+  
+    #SBC{
+      margin-left: 15%;
+    }
+
+    
 
     .ResLine {
       background-color: gray;
@@ -1028,12 +1153,65 @@ body{
     
     
 }
-   
-@media (max-width: 280px){
 
-    .carousel div img {
-        width: 200px; 
-        height: 200px;
-        
+@media (max-width: 392px){
+
+  .wrapper .carousel div {
+      width: 80%; 
+      height: auto;
+      /* margin-left: 8vh;  */
+      margin-right: 25%;
+  }
+}
+
+@media (max-width:375px){
+
+  .wrapper .carousel div {
+      width: 80%; 
+      height: auto;
+      /* margin-left: 8vh;  */
+      margin-right: 30vw;
+  }
+
+  .DsCarousel{
+      margin-left: 2vh;
+  }
+
+  .carousel img{
+      height: 50px;
+      margin-left: 10vw;
+      max-width:650px;
+    }
+
+    .carousel div{
+      margin-right: 5em;
+      margin-left: 20vw;
     }
 }
+
+@media (max-width:350px){
+  .wrapper .carousel div {
+      /* width: 80%; 
+      height: auto; */
+      /* margin-left: 8vh;  */
+      margin-right: 50vw;
+  }
+}
+
+@media (max-width:300px){
+
+  .wrapper .carousel div {
+      /* width: 80%;  */
+      /* height: auto; */
+      /* margin-left: 8vh;  */
+      margin-right: 10000vw;
+  }
+
+  .wrapper .carousel div {
+      width: 80%; 
+      height: auto;
+      /* margin-left: 8vh;  */
+      margin-right: 20vw;
+  }
+}
+   
