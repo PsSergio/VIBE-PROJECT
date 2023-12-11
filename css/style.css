@@ -1062,7 +1062,6 @@ footer p, footer ul{
     font-size: 0px;
     cursor: pointer;
     overflow: hidden;
-    white-space: nowrap;
     scroll-behavior: smooth;
   }
 
@@ -1134,7 +1133,6 @@ footer p, footer ul{
     font-size: 2em;
     cursor: pointer;
     overflow: hidden;
-    white-space: nowrap;
     scroll-behavior: smooth;
     width: 100%; 
     height: auto;
@@ -1166,15 +1164,35 @@ footer p, footer ul{
     margin-left: 0px;
   }
 
-.DsCarousel{
-    font-size: 18px;
-}
-
 .position-title{
     margin-top: 5vh;
     margin-left: 10%;
     font-family: 'COCOGOOSE DEMIBOLD';
 }
+
+.carousel div p{
+    font-size: .6em;
+}
+
+.name-produto-carrossel{
+    margin-bottom: .5em !important;
+    position: relative;
+    font-family: 'COCOGOOSE DEMIBOLD';
+
+}
+
+.preco-produto-carrossel{
+    font-family: 'LEMON MILK BOLD';
+
+}
+
+.carousel div{
+    word-wrap: break-word;
+
+    width: 340px !important;
+}
+
+
 
 @media (max-width: 1480px){
 
