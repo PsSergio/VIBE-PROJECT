@@ -63,81 +63,111 @@ setInterval(function(){
     }
 },7000)
 
-const carousel = document.getElementsByClassName("carousel")[0]
-// const DivImg = carousel.querySelector("div")
-firstImg = carousel.querySelectorAll("div")[0]
-arrowIcons = document.querySelectorAll(".wrapper i");
-
-
-
+const carousel1 = document.getElementById("carousel-pag-produto");
+const carousel2 = document.getElementById("carousel-pag-produto1");
+const firstImg1 = carousel1.querySelectorAll("div")[0];
+const firstImg2 = carousel2.querySelectorAll("div")[0];
+const arrowIcons1 = document.querySelectorAll(".wrapper i#left, .wrapper i#right");
+const arrowIcons2 = document.querySelectorAll(".wrapper i#left1, .wrapper i#right1");
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
-const showHideIcons = () => {
-    // showing and hiding prev/next icon according to carousel scroll left value
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
-    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
-    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
-}
+const showHideIcons = (carousel, icons) => {
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+    icons[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
+    icons[1].style.display = carousel.scrollLeft === scrollWidth ? "none" : "block";
+};
 
-arrowIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
-        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
-        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
-        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
-    });
-});
+const autoSlide = (carousel, firstImg) => {
+    if (carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
 
-const autoSlide = () => {
-    // if there is no image left to scroll then return from here
-    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
-
-    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    positionDiff = Math.abs(positionDiff);
     let firstImgWidth = firstImg.clientWidth + 14;
-    // getting difference value that needs to add or reduce from carousel left to take middle img center
     let valDifference = firstImgWidth - positionDiff;
 
-    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+    if (carousel.scrollLeft > prevScrollLeft) {
         return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
-    // if user is scrolling to the left
-    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-}
 
-const dragStart = (e) => {
-    // updatating global variables value on mouse down event
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+};
+
+const autoSlide2 = (carousel, firstImg) => {
+    if (carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+
+    positionDiff = Math.abs(positionDiff);
+    let firstImgWidth = firstImg.clientWidth + 14;
+    let valDifference = firstImgWidth - positionDiff;
+
+    if (carousel.scrollLeft > prevScrollLeft) {
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+};
+
+const dragStart = (e, carousel) => {
     isDragStart = true;
     prevPageX = e.pageX || e.touches[0].pageX;
     prevScrollLeft = carousel.scrollLeft;
-}
+};
 
-const dragging = (e) => {
-    // scrolling images/carousel to left according to mouse pointer
-    if(!isDragStart) return;
+const dragStart2 = (e) => dragStart(e, carousel2);
+
+const dragging = (e, carousel, arrowIcons) => {
+    if (!isDragStart) return;
     e.preventDefault();
     isDragging = true;
     carousel.classList.add("dragging");
     positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
     carousel.scrollLeft = prevScrollLeft - positionDiff;
-    showHideIcons();
-}
+    showHideIcons(carousel, arrowIcons);
+};
 
-const dragStop = () => {
+const dragging2 = (e) => dragging(e, carousel2, arrowIcons2);
+
+const dragStop = (carousel, firstImg) => {
     isDragStart = false;
     carousel.classList.remove("dragging");
 
-    if(!isDragging) return;
+    if (!isDragging) return;
     isDragging = false;
-    autoSlide();
-}
+    autoSlide(carousel, firstImg);
+};
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("touchstart", dragStart);
+const dragStop2 = () => dragStop(carousel2, firstImg2);
 
-document.addEventListener("mousemove", dragging);
-carousel.addEventListener("touchmove", dragging);
+arrowIcons1.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg1.clientWidth + 14;
+        carousel1.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(carousel1, arrowIcons1), 60);
+    });
+});
 
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("touchend", dragStop);
+arrowIcons2.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg2.clientWidth + 14;
+        carousel2.scrollLeft += icon.id === "left1" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(carousel2, arrowIcons2), 60);
+    });
+});
+
+carousel1.addEventListener("mousedown", (e) => dragStart(e, carousel1));
+carousel1.addEventListener("touchstart", (e) => dragStart(e, carousel1));
+
+document.addEventListener("mousemove", (e) => dragging(e, carousel1, arrowIcons1));
+carousel1.addEventListener("touchmove", (e) => dragging(e, carousel1, arrowIcons1));
+
+document.addEventListener("mouseup", () => dragStop(carousel1, firstImg1));
+carousel1.addEventListener("touchend", () => dragStop(carousel1, firstImg1));
+
+carousel2.addEventListener("mousedown", dragStart2);
+carousel2.addEventListener("touchstart", dragStart2);
+
+document.addEventListener("mousemove", dragging2);
+carousel2.addEventListener("touchmove", dragging2);
+
+document.addEventListener("mouseup", dragStop2);
+carousel2.addEventListener("touchend", dragStop2);
 
