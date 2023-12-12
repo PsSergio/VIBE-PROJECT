@@ -66,10 +66,14 @@ setInterval(function(){
 const carousel1 = document.getElementById("carousel-pag-produto");
 const carousel2 = document.getElementById("carousel-pag-produto1");
 const firstImg1 = carousel1.querySelectorAll("div")[0];
-if(carousel2 != null){
+if(carousel2 == null){
 
-    const firstImg2 = carousel2.querySelectorAll("div")[0];
+    const firstImg2 = 0
     
+}else{
+    
+    const firstImg2 = carousel2.querySelectorAll("div")[0];
+
 }
 const arrowIcons1 = document.querySelectorAll(".wrapper i#left, .wrapper i#right");
 const arrowIcons2 = document.querySelectorAll(".wrapper i#left1, .wrapper i#right1");
