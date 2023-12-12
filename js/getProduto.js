@@ -1,4 +1,4 @@
-const URL_ACHAR_PRODUTOS = "http://localhost:8080/produto/find"
+const URL_ACHAR_PRODUTOS = "https://api-java-vibe.onrender.com/produto/find"
 let idProduto = localStorage.getItem('idProduto')
 let idPacoteAtual
 async function getProdutoByID(id){

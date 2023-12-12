@@ -1,4 +1,4 @@
-const BASEURL_PRODUTOS = "http://localhost:8080/produto/all"
+const BASEURL_PRODUTOS = "https://api-java-vibe.onrender.com/produto/all"
 function organizarElementosProduto(img, name, subDesc, price, id){
     const ProductCard = document.createElement("div")
     ProductCard.classList.add("product-card")

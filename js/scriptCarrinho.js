@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 let dropDownOpened = false;
 
-
-
 function abrirDropDown(dropDownContainer){
 
     if(!dropDownOpened){
@@ -116,106 +114,106 @@ carousel.addEventListener("touchend", dragStop);
 
 })
 
-var quantityButtons = document.querySelectorAll('.Quantity button');
-var quantitySpan = document.querySelectorAll('.Quantity .num')[0];
-var quantity = 0;
+// var quantityButtons = document.querySelectorAll('.Quantity button');
+// var quantitySpan = document.querySelectorAll('.Quantity .num')[0];
+// var quantity = 0;
 
-var quantityButtons2 = document.querySelectorAll('.Quantity2 button');
-var quantitySpan2 = document.querySelectorAll('.Quantity2 .num2')[0];
-var quantity2 = 0;
+// var quantityButtons2 = document.querySelectorAll('.Quantity2 button');
+// var quantitySpan2 = document.querySelectorAll('.Quantity2 .num2')[0];
+// var quantity2 = 0;
 
-var totalQuantitySpan = document.getElementById('QNTDC');
-var subtotalSpan = document.getElementById('SBC');
+// var totalQuantitySpan = document.getElementById('QNTDC');
+// var subtotalSpan = document.getElementById('SBC');
 
-function updateQuantityDisplay() {
-  quantitySpan.textContent = quantity;
-  updateTotal(0, quantity);
-  updateTotalQuantity();
-}
+// function updateQuantityDisplay() {
+//   quantitySpan.textContent = quantity;
+//   updateTotal(0, quantity);
+//   updateTotalQuantity();
+// }
 
-function updateQuantity() {
-  var buttonType = this.classList.contains('plus') ? 'plus' : 'minus';
+// function updateQuantity() {
+//   var buttonType = this.classList.contains('plus') ? 'plus' : 'minus';
 
-  if (buttonType === 'plus') {
-    quantity++;
-  } else if (quantity > 0) {
-    quantity--;
-  }
+//   if (buttonType === 'plus') {
+//     quantity++;
+//   } else if (quantity > 0) {
+//     quantity--;
+//   }
 
-  updateQuantityDisplay();
-}
+//   updateQuantityDisplay();
+// }
 
-function updateQuantityDisplay2() {
-  quantitySpan2.textContent = quantity2;
-  updateTotal(1, quantity2);
-  updateTotalQuantity();
-}
+// function updateQuantityDisplay2() {
+//   quantitySpan2.textContent = quantity2;
+//   updateTotal(1, quantity2);
+//   updateTotalQuantity();
+// }
 
-function updateQuantity2() {
-  var buttonType = this.classList.contains('plus2') ? 'plus2' : 'minus2';
+// function updateQuantity2() {
+//   var buttonType = this.classList.contains('plus2') ? 'plus2' : 'minus2';
 
-  if (buttonType === 'plus2') {
-    quantity2++;
-  } else if (quantity2 > 0) {
-    quantity2--;
-  }
+//   if (buttonType === 'plus2') {
+//     quantity2++;
+//   } else if (quantity2 > 0) {
+//     quantity2--;
+//   }
 
-  updateQuantityDisplay2();
-}
+//   updateQuantityDisplay2();
+// }
 
-function updateSubtotalInSummary(subtotal) {
+// function updateSubtotalInSummary(subtotal) {
     
-    var maxSubtotal = 399.98;
+//     var maxSubtotal = 399.98;
   
     
-    if (subtotal > maxSubtotal) {
-      subtotal = maxSubtotal;
-    }
+//     if (subtotal > maxSubtotal) {
+//       subtotal = maxSubtotal;
+//     }
   
-    var subtotalCell = document.getElementById('subtotalCell');
-    subtotalCell.textContent = '$' + subtotal.toFixed(2);
-  }
+//     var subtotalCell = document.getElementById('subtotalCell');
+//     subtotalCell.textContent = '$' + subtotal.toFixed(2);
+//   }
   
   
-  function updateTotalInSummary() {
-    var discountElement = document.getElementById('discountCell'); 
-    var discount = parseFloat(discountElement.textContent.replace('R$', '').replace(',', '.')) || 0;
-    var totalCell = document.getElementById('totalCell');
-    var totalSubtotal = (quantity + quantity2) * 199.99;
-    var total = totalSubtotal - discount; 
+//   function updateTotalInSummary() {
+//     var discountElement = document.getElementById('discountCell'); 
+//     var discount = parseFloat(discountElement.textContent.replace('R$', '').replace(',', '.')) || 0;
+//     var totalCell = document.getElementById('totalCell');
+//     var totalSubtotal = (quantity + quantity2) * 199.99;
+//     var total = totalSubtotal - discount; 
   
-    totalCell.textContent = '$' + total.toFixed(2);
-  }
+//     totalCell.textContent = '$' + total.toFixed(2);
+//   }
   
 
-function updateTotal(row, quantity) {
-    var price = 199.99;
-    var subtotal = price * quantity;
-    var totalElement = document.querySelectorAll('.Total')[row];
-    totalElement.textContent = '$' + subtotal.toFixed(2);
-    updateSubtotalInSummary(subtotal);
-    updateTotalInSummary();
-  }
+// function updateTotal(row, quantity) {
+//     var price = 199.99;
+//     var subtotal = price * quantity;
+//     var totalElement = document.querySelectorAll('.Total')[row];
+//     totalElement.textContent = '$' + subtotal.toFixed(2);
+//     updateSubtotalInSummary(subtotal);
+//     updateTotalInSummary();
+//   }
 
-  function updateTotalQuantity() {
-    var totalQuantity = quantity + quantity2;
-    var totalSubtotal = (quantity + quantity2) * 199.99;
-    totalQuantitySpan.textContent = 'Quantidade de Produtos: ' + totalQuantity;
-    subtotalSpan.textContent = 'Subtotal: $' + totalSubtotal.toFixed(2);
-    updateSubtotalInSummary(totalSubtotal); 
-    updateTotalInSummary(); 
-  }
+//   function updateTotalQuantity() {
+//     var totalQuantity = quantity + quantity2;
+//     var totalSubtotal = (quantity + quantity2) * 199.99;
+//     totalQuantitySpan.textContent = 'Quantidade de Produtos: ' + totalQuantity;
+//     subtotalSpan.textContent = 'Subtotal: $' + totalSubtotal.toFixed(2);
+//     updateSubtotalInSummary(totalSubtotal); 
+//     updateTotalInSummary(); 
+//   }
 
-quantityButtons.forEach(function (button) {
-  button.addEventListener('click', updateQuantity);
-});
+// quantityButtons.forEach(function (button) {
+//   button.addEventListener('click', updateQuantity);
+// });
 
-quantityButtons2.forEach(function (button) {
-  button.addEventListener('click', updateQuantity2);
-});
+// quantityButtons2.forEach(function (button) {
+//   button.addEventListener('click', updateQuantity2);
+// });
 
-updateQuantityDisplay();
-updateQuantityDisplay2();
+// updateQuantityDisplay();
+// updateQuantityDisplay2();
 
 
 
