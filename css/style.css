@@ -604,6 +604,17 @@ footer p, footer ul{
     margin-top: 0.5vh;
 }
 
+.termos-uso{
+    min-width:30vw;
+    /* flex-direction: row; */
+    font-size: 12px;
+}
+
+u{
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
 .btn-display-flex-row{
     display: flex;
     flex-direction: row;
@@ -1521,6 +1532,8 @@ footer p, footer ul{
 
 @media (max-width:675px){
 
+    
+
     #card-dont-show{
         display: block;
     }
@@ -1669,6 +1682,12 @@ footer p, footer ul{
 
       .DsCarousel{
         font-size: 12px;
+    }
+
+    .termos-uso{
+        width:60vw;
+        /* flex-direction: row; */
+        font-size: 10px;
     }
 }
 
